@@ -1,0 +1,91 @@
+.footer {
+    display: block;
+    position: fixed;
+    bottom: 0 !important;
+    z-index: 9999;
+    background-color: #181818;
+    padding-top: 10px;
+    margin: 0px;
+
+    .developed {
+        padding-left: 40px;
+        padding-right: 10px;
+        color: #ffff;
+        font: 400 15px 'Poppins', sans-serif;
+
+        .strong-name{
+            cursor: pointer;
+            transition: .5s;
+            transform: scale(0.9);
+
+            &:hover{
+                color: #8bd3dd ;
+            }
+        }
+    }
+
+
+    .social-media {
+        padding-left: 10px;
+        padding-right: 40px;
+
+        .list-socialmedia {
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            justify-content: end;
+            list-style: none;
+            text-align: center;
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #b3b3b3;
+                margin-right: 10px;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                transition: .3s;
+                transform: scale(0.9);
+
+                &:nth-child(1):hover{
+                    box-shadow: 0 0 25px rgb(121, 12, 230);
+                    transform: scale(1.2);    
+                    svg {
+                        color: rgb(121, 12, 230);
+                        transition: .3s;
+                    }
+                }
+
+                &:nth-child(2):hover{
+                    box-shadow: 0 0 25px palevioletred;
+                    transform: scale(1.2);    
+                    svg {
+                        color: palevioletred;
+                        transition: .3s;
+                    }
+                }    
+                
+                &:nth-child(3):hover{
+                    box-shadow: 0 0 25px lightblue;
+                    transform: scale(1.2);    
+                    svg {
+                        color: lightblue;
+                        transition: .3s;
+                    }
+                }    
+
+                &:nth-child(4):hover{
+                    box-shadow: 0 0 25px blue;
+                    transform: scale(1.2);    
+                    svg {
+                        color: blue;
+                        transition: .3s;
+                    }
+                }    
+            }
+        }
+    }
+}

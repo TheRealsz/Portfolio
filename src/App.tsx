@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Footer } from './components/Footer';
+import Navbar from './components/Navbar';
+import Particle from './components/Particle';
+import {Contato} from './pages/Contato';
+import {CV} from './pages/CV';
+import {Experiencia} from './pages/Experiencia';
+import {Habilidades} from './pages/Habilidades';
+import {Home} from './pages/Home'
+import {Projetos} from './pages/Projetos';
+import {Sobre} from './pages/Sobre';
+import './styles/global.scss'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar/>
+      <Particle/>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/Sobre" element={<Sobre/>} />
+        <Route path="/Habilidades" element={<Habilidades/>} />
+        <Route path="/Projetos" element={<Projetos/>} />
+        <Route path="/Experiencia" element={<Experiencia/>} />
+        <Route path="/CV" element={<CV/>} />
+        <Route path="/Contato" element={<Contato/>} />
+      </Routes>
+      <Footer/>
+    </BrowserRouter>
   );
 }
 
