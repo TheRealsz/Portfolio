@@ -2,17 +2,20 @@
     box-sizing: border-box;
 }
 
-h1{
-    font-size: 60px !important;
+h1, p {
+    font-family: 'Montserrat', sans-serif;
     color: aliceblue;
 }
 
+h1{
+    font-size: 50px !important;
+}
+
 #home{
-    display: block;
     width: 100%;
     height: 100%;
     padding: 0 0;
-    margin: 50px 0px;
+    margin: 150px 0px;
     position: fixed;
     z-index: 999;
 
@@ -25,8 +28,25 @@ h1{
     }
 
     .main-content-home{
-        margin-left: 100px !important;
-        display: flex;
+        height: 500px;
+        animation: homeAnimation 2s backwards;
+        
+        @keyframes homeAnimation {
+            0% {
+                transform: translateY(500px);
+                opacity: 0;
+            }
+
+            50%{
+                transform: translateY(-30px);
+                opacity: 1;
+            }
+
+            100%{
+                transform: translateY(0px);
+            }
+
+        }
 
         &>*{
             position: absolute;
@@ -35,7 +55,44 @@ h1{
 
         .left-content{
             margin-top: 200px;
-            width: 900px;
+
+            .name_span {
+                background: -webkit-linear-gradient(135deg, #8bd3dd 0%,#08b699 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .Typewriter{
+                width: 700px;
+                color: #8bd3dd;
+            }
+
+            .buttonSobre{
+                letter-spacing: 1.2px;
+                font-weight: bold;
+                margin-top: 15px;
+                padding: 20px 120px;
+                transition: 0.5s;
+                background: #4692d1;
+                color: #dddcdc;
+                border-style: none;
+
+                &:hover{
+                    color: #fff;
+                    background: #0f4b7c;
+                    box-shadow: 0 0 10px #0f4b7c, 0 0 40px #0f4b7c, 0 0 80px #0f4b7c;
+                    transition-delay: 0.2s;
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        .photoHome {
+            max-width: 550px;
+            max-height: 550px;
+            width: auto;
+            height: auto;
+            margin-top: 120px;
         }
     }
 }

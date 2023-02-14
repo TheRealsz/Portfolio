@@ -7,6 +7,9 @@ import '../styles/navbar.scss'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
 
+// Arrumar o hover dele, para quando tiver .show no responsivo, nao ficar uma barra azul gigante
+// Fazer com que identifique que pagina estou e daixar o hover ativado
+
 function NavBar(){
 
     const [navColor, setNavColor] = useState(false)

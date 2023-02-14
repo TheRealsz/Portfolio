@@ -2,6 +2,8 @@ import { Container, Row, Col } from "react-bootstrap"
 import '../styles/footer.scss'
 import { AiFillGithub, AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
 
+// Deixar responsivo
+
 export function Footer(){
     
     function redirect(url : string) {
