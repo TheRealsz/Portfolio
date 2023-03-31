@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom"
 import mainHome from '../assets/mainHome.png'
 import '../styles/home.scss'
 
+
 export function Home(){
     
     const navigate = useNavigate()
@@ -15,7 +16,7 @@ export function Home(){
 
     return(
         <section>
-            <Container fluid id="home">
+            <Container fluid id="defaultContainer">
                 <Particle/>
                 <Container className="main-content-home">
                     <Row className="mainRowHome">

@@ -1,0 +1,43 @@
+
+.imgRow{
+    width: 100%;
+    height: 200px;
+    margin: 0px 0px;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 150px !important;
+        height: 150px !important;
+        position: relative;
+        z-index: 999;
+        border-radius: 50%;
+        outline: 5px solid #8bd3dd;
+        padding: 0px 0px !important;
+        transition: 0.5s;
+
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 10px #8bd3dd, 0 0 20px #8bd3dd, 0 0 30px #8bd3dd;
+        }
+    }
+}
+
+.contentRow{
+    margin: 50px 300px;
+    width: 100%;
+    height: auto;
+
+    .divider{
+        content: '';
+        height: 50px;
+        width: 5px;
+        background: #b3b3b3;
+        position: relative;
+        z-index: 999;
+    }
+}
+p, li, Button{
+    position: relative;
+    z-index: 999;
+}

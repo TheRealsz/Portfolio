@@ -14,13 +14,17 @@
         color: #ffff;
         font: 500 15px 'Montserrat', sans-serif;
 
-        .strong-name{
-            cursor: pointer;
-            transition: .5s;
-            transform: scale(0.9);
+        >p {
+            padding-top: 5px;
+            
+            .strong-name{
+                cursor: pointer;
+                transition: .5s;
+                transform: scale(0.9);
 
-            &:hover{
-                color: #8bd3dd ;
+                &:hover{
+                    color: #8bd3dd ;
+                }
             }
         }
     }
