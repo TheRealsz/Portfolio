@@ -24,20 +24,73 @@
 }
 
 .contentRow{
-    margin: 50px 300px;
+    margin: 50px 0px !important;
     width: 100%;
     height: auto;
 
-    .divider{
-        content: '';
-        height: 50px;
-        width: 5px;
-        background: #b3b3b3;
-        position: relative;
-        z-index: 999;
+    .firstTxtBox, .secondTxtBox{
+        display: flex;
+
+        .defaultTxt{
+            z-index: 999;
+            background-color: #0f0c1b !important;
+            padding: 10px;
+            border-radius: 20px;
+
+            
+            >p{
+                padding: 20px;
+                letter-spacing: 0.5px;
+                line-height: 35px !important;
+                margin-bottom: 0px;
+                >strong{
+                    color: #8bd3dd;
+                }
+            }
+            
+            >ul{
+                color: #fff;
+                list-style: none;
+                
+                li{
+                    line-height: 40px;
+                }
+            }
+            
+            >p, li{
+                font: 400 18px 'Poppins', sans-serif;
+            }
+        }
+        
+        .presentationTxt{
+            // Ver se arruma essa gambiarra com 12px que deixa o espacamento das duas caixas de texto iguais
+            margin: 0px;
+            margin-left: 150px;
+            margin-right: 12px;
+        }
+
+        .profissionalTxt{
+            margin: 0px;
+            margin-right: 150px;   
+        }
+        
+        .divider{
+            content: '';
+            height: auto;
+            width: 5px;
+            background: #8bd3dd;
+            position: relative;
+            z-index: 999;
+        }
     }
+
+    .secondTxtBox{
+        display: flex;
+        padding-left: 0px;
+    }
+
 }
-p, li, Button{
+p, li{
     position: relative;
     z-index: 999;
 }

@@ -1,11 +1,14 @@
 import { Container, Row, Col } from "react-bootstrap"
 import '../styles/footer.scss'
 import { AiFillGithub, AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
+import { useTranslation } from 'react-i18next'
 
 // Deixar responsivo
 
 export function Footer(){
     
+    const { t } = useTranslation()
+
     function redirect(url : string) {
         window.open(url)
     }

@@ -2,8 +2,7 @@
     box-sizing: border-box;
 }
 
-h1,
-p {
+h1, p {
     font-family: 'Montserrat', sans-serif;
     color: aliceblue;
 }
@@ -14,6 +13,7 @@ h1 {
 
 
 .main-content-home {
+    margin-top: 50px;
     height: 500px;
     animation: homeAnimation 2s backwards;
 
@@ -51,25 +51,6 @@ h1 {
         .Typewriter {
             width: 700px;
             color: #8bd3dd;
-        }
-
-        .buttonSobre {
-            letter-spacing: 1.2px;
-            font-weight: bold;
-            margin-top: 15px;
-            padding: 20px 120px;
-            transition: 0.5s;
-            background: #4692d1;
-            color: #dddcdc;
-            border-style: none;
-
-            &:hover {
-                color: #fff;
-                background: #0f4b7c;
-                box-shadow: 0 0 10px #0f4b7c, 0 0 40px #0f4b7c, 0 0 80px #0f4b7c;
-                transition-delay: 0.2s;
-                transform: scale(1.05);
-            }
         }
     }
 

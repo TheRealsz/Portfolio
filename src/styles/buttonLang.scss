@@ -1,0 +1,20 @@
+.buttonLang {
+    position: relative !important;
+    z-index: 9999 !important;
+    letter-spacing: 1.2px !important;
+    font-weight: bold !important;
+    margin-top: 150px !important;
+    padding: 20px 120px !important;
+    transition: 0.5s !important;
+    background: #4692d1 !important;
+    color: #dddcdc !important;
+    border-style: none !important;
+
+    &:hover {
+        color: #fff !important;
+        background: #0f4b7c !important;
+        box-shadow: 0 0 10px #0f4b7c, 0 0 40px #0f4b7c, 0 0 80px #0f4b7c !important;
+        transition-delay: 0.2s !important;
+        transform: scale(1.05) !important;
+    }
+}
