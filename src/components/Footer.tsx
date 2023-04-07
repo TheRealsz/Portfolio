@@ -18,7 +18,7 @@ export function Footer(){
             <Row>
                 <Col md={6}>
                     <div className="developed">
-                        <p>Desenvolvido por <strong className="strong-name" onClick={() => redirect('https://github.com/TheRealRobinho')}>Robson Diego</strong></p>
+                        <p>{t("Desenvolvido por ")}<strong className="strong-name" onClick={() => redirect('https://github.com/TheRealRobinho')}>Robson Diego</strong></p>
                     </div>
                 </Col>
                 <Col md={6}>

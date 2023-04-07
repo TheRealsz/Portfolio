@@ -5,7 +5,27 @@
         "Projetos" : "Projects",
         "Experiencia" : "Experience",
         "Contato" : "Contact",
-        "Desenvolvedor Front-End." : "Front-End Developer" 
+        "Desenvolvedor Front-End." : "Front-End Developer.", 
+        "Desenvolvedor Web.": "Web Developer.",
+        "Tecnico em informatica": "Computer technician.",
+        "Desenvolvido por ": "Developed by ",
+        "Oi, sou": "Hi, I am",
+        "Saiba mais": "Know more",
+        "Oi, meu nome é": "Hi, my name is",
+        "moro em Sorocaba-SP e sou um": "I live in Sorocaba-SP and I am a",
+        "Desenvolvedor Front-End" : "Front-End Developer",
+        "Atualmente, estou no 2º semestre de": "I am currently in the 2nd semester of",
+        "Analise e desenvolvimento de sistemas": "Systems Development Analyst",
+        "e estudo em casa as tecnologias": "and study at home the technologies",
+        "ReactJS, Typescript e SCSS": "ReactJS, Typescript and SCSS",
+        " fazendo projetos próprios para praticar. Além de programar e estudar, gosto de fazer outras coisas como:": " doing own projects to practice. Besides programming and studying, I like to do other things like:",
+        "Jogar": "Play",
+        "Assistir series/filmes/animes/lives/videos": "Watch series/movies/animes/lives/videos",
+        "Academia": "Gym",
+        "Ler": "Read",
+        "Moda": "Fashion",
+        "Meu foco atual é adquirir o maximo de conhecimento nessas tecnologias para conseguir um emprego na area e poder impactar positivamente a vida de outras pessoas com minhas habilidades e conhecimentos. ": "My current focus is adquire the maximum knowledge in these technologies to get a job in the area and be able to positively impact the other peoples lives with my skills and knowledge. ",
+        "Se estiver interessado em me convidar para um projeto ou queira que eu construa um, pode entrar em contato comigo pelas minhas redes sociais ou por aqui.": "If you are interested to invite me for a project or want me to build one, you can contact me through my social medias or here."
     }
 
 }

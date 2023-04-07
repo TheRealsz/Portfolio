@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import '../styles/navbar.scss'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
-import { useLanguage } from "../hooks/useLanguage"
+import { useTranslation } from "react-i18next"
 
 
 // Arrumar o hover dele, para quando tiver .show no responsivo, nao ficar uma barra azul gigante
@@ -14,7 +14,7 @@ import { useLanguage } from "../hooks/useLanguage"
 
 function NavBar(){
     
-    const {translate} = useLanguage() 
+    const {t} = useTranslation() 
     const [navColor, setNavColor] = useState(false)
     const [iconToggler, setIconToggler] = useState(true)
     
@@ -48,25 +48,25 @@ function NavBar(){
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto">
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/">{translate('Home')}</Nav.Link>
+                            <Nav.Link as={Link} to="/">Home</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/Sobre">{translate('Sobre')}</Nav.Link>
+                            <Nav.Link as={Link} to="/Sobre">{t('Sobre')}</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/Habilidades">{translate('Habilidades')}</Nav.Link>
+                            <Nav.Link as={Link} to="/Habilidades">{t('Habilidades')}</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/Projetos">{translate('Projetos')}</Nav.Link>
+                            <Nav.Link as={Link} to="/Projetos">{t('Projetos')}</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/Experiencia">{translate('Experiencia')}</Nav.Link>
+                            <Nav.Link as={Link} to="/Experiencia">{t('Experiencia')}</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/CV">{translate('CV')}</Nav.Link>
+                            <Nav.Link as={Link} to="/CV">CV</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/Contato">{translate('Contato')}</Nav.Link>
+                            <Nav.Link as={Link} to="/Contato">{t('Contato')}</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>

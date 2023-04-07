@@ -8,7 +8,6 @@ type TLanguageProvider = {
 
 type TLanguageContext = {
     handleChangeLanguage : () => void
-    translate : (text : string) => string
 }
 
 
@@ -28,15 +27,13 @@ export const LanguageProvider = ({children}: TLanguageProvider) => {
         setCurrentLanguage(newLanguage)
     }
 
-    const translate = (text: string) => t(text)
+
     
 
     const value = useMemo(() => ({
-        handleChangeLanguage, 
-        translate,
+        handleChangeLanguage
     }), [
-        handleChangeLanguage, 
-        translate,
+        handleChangeLanguage
     ])
 
     return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>

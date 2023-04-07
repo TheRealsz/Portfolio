@@ -5,11 +5,11 @@ import { useNavigate } from "react-router-dom"
 import mainHome from '../assets/mainHome.png'
 import { ButtonNav } from "../components/ButtonNav"
 import '../styles/home.scss'
-import { useLanguage } from "../hooks/useLanguage"
+import { useTranslation } from "react-i18next"
 
 
 export function Home(){
-    const {translate} = useLanguage() 
+    const {t} = useTranslation() 
 
     const navigate = useNavigate()
 
@@ -25,13 +25,13 @@ export function Home(){
                     <Row className="mainRowHome">
                         <Col md={7} className="left-content">
                             <div className="text-content">
-                                <h1>Ola, sou <span className="name_span">Robson Diego</span>
+                                <h1>{t("Oi, sou")} <span className="name_span">Robson Diego</span>
                                     <Typewriter
                                         options={{
                                             strings: [
-                                                translate("Desenvolvedor Front-End."),
-                                                "Desenvolvedor Web.",
-                                                "Tecnico em informatica."
+                                                t("Desenvolvedor Front-End."),
+                                                t("Desenvolvedor Web."),
+                                                t("Tecnico em informatica.")
                                             ],
                                             autoStart: true,
                                             loop: true,
@@ -41,7 +41,7 @@ export function Home(){
                                     />
                                 </h1>
                             </div>
-                            <ButtonNav variant="outline-primary" onClick={() => navigateTo('/Sobre')} size="lg">Saiba mais</ButtonNav>      
+                            <ButtonNav variant="outline-primary" onClick={() => navigateTo('/Sobre')} size="lg">{t("Saiba mais")}</ButtonNav>      
                         </Col>
                         <Col md={5}>
                             <img src={mainHome} alt="" className="photoHome"/>
