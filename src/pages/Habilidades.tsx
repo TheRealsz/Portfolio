@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap"
-import { DropdownLng } from "../components/DropdownLng";
+import { ButtonLng } from "../components/ButtonLng";
 import Particle from "../components/Particle";
 import '../styles/habilidades.scss'
 
@@ -9,7 +9,6 @@ export function Habilidades() {
         <section>
             <Container fluid id="defaultContainer">
             <Particle />
-                <DropdownLng />
             </Container>
         </section>
     )

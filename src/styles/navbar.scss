@@ -1,4 +1,4 @@
-.navbar{
+.navbar{    
     transition: all 0.4s ease-out 0s;
     background-color: transparent !important;
     width: 100%;
@@ -29,6 +29,10 @@
     }
 }
 
+.container {
+    padding: 0px !important;
+}
+
 .icon-nav{
     font: 900 25px "Poppins", sans-serif;
     color: #8bd3dd !important;
@@ -50,6 +54,10 @@
         display: block !important;
         font-size: 30px;
     }
+}
+
+.ms-auto{
+    margin-left: 0px !important;
 }
 
 .nav-item{

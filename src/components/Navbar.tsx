@@ -7,6 +7,7 @@ import '../styles/navbar.scss'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { useTranslation } from "react-i18next"
+import { ButtonLng } from './ButtonLng'
 
 
 // Arrumar o hover dele, para quando tiver .show no responsivo, nao ficar uma barra azul gigante
@@ -18,24 +19,14 @@ function NavBar(){
     const [navColor, setNavColor] = useState(false)
     const [iconToggler, setIconToggler] = useState(true)
     
-    function scrollChanger(){
-        if(window.scrollY > 30) {
-            setNavColor(true)
-        }
-        else {
-            setNavColor(false)
-        }
-    }
+    function scrollChanger() {
+        setNavColor(window.scrollY > 30);
+      }
 
     window.addEventListener("scroll", scrollChanger)
 
     function changeIconToggler(){
-        if(iconToggler == true) {
-            setIconToggler(false)
-        }
-        else{
-            setIconToggler(true)
-        }
+        setIconToggler(!iconToggler)
     }
 
     const iconComponent = iconToggler ? <GiHamburgerMenu onClick={() => changeIconToggler()}/> : <AiOutlineClose onClick={() => changeIconToggler()}/>
@@ -68,6 +59,7 @@ function NavBar(){
                         <Nav.Item>
                             <Nav.Link as={Link} to="/Contato">{t('Contato')}</Nav.Link>
                         </Nav.Item>
+                        <ButtonLng/>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
