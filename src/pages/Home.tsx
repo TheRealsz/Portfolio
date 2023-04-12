@@ -8,6 +8,8 @@ import '../styles/home.scss'
 import { useTranslation } from "react-i18next"
 
 
+// Olhar os container e tamanhos no doc do react-bootstrap
+
 export function Home(){
     const {t} = useTranslation() 
 

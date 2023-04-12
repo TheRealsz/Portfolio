@@ -10,10 +10,8 @@ import { ButtonNav } from "../components/ButtonNav";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-// Nome, o que sou e o que faço atualmente, no que estou focado/tenho interesse, onde pode me encontrar, de onde sou e oq gosto de fazer alem de programar, objetivos
-
+// Adicionar nome da faculdade?
 // Se ficar muito grande, tranferir algumas coisas para o Home para introduzir brevemente, de inicio, tentar juntar o que tem no home e no about desse https://soumyajit.vercel.app/about 
-// falando sobre o que sei, areas de interesse e no que faço
 export function Sobre() {
     
     const { t } = useTranslation()
@@ -61,7 +59,7 @@ export function Sobre() {
                         <div className="defaultTxt profissionalTxt">
                             <p>{t("Meu foco atual é adquirir o maximo de conhecimento nessas tecnologias para conseguir um emprego na area e poder impactar positivamente a vida de outras pessoas com minhas habilidades e conhecimentos. ")}
                             <strong>{t("Se estiver interessado em me convidar para um projeto ou queira que eu construa um, pode entrar em contato comigo pelas minhas redes sociais ou por aqui.")}</strong></p>
-                            <ButtonNav variant="outline-primary" onClick={() => navigateTo('/Contato')} size="lg">{t("Contato")}</ButtonNav>
+                            <ButtonNav variant="outline-primary" onClick={() => navigateTo('/Contato')} size="sm">{t("Contato")}</ButtonNav>
                         </div>
                     </Col>
                 </Row>

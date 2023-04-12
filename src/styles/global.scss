@@ -15,16 +15,34 @@ body, input, button, textarea{
     font: 400 20px 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #13121d;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #4692d1;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0f4b7c ;
+    border-radius: 10px;
+  }
+
 #defaultContainer{
     width: 100%;
     height: 100%;
     padding: 0 0;
     margin: 100px 0px;
-    position: fixed;
+    position: absolute;
     z-index: 999;
 
     #tsparticles{
-        position: fixed !important;
+        position: absolute !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
         width: 100%;

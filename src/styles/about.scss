@@ -72,6 +72,12 @@
         .profissionalTxt{
             margin: 0px;
             margin-right: 150px;   
+       
+            >button{    
+                margin-left: 20px !important;
+                font-size: 16px;
+                margin-top: 21px !important;
+            }
         }
         
         .divider{
@@ -87,6 +93,7 @@
     .secondTxtBox{
         display: flex;
         padding-left: 0px;
+
     }
 
 }

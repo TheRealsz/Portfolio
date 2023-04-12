@@ -12,6 +12,7 @@ import { ButtonLng } from './ButtonLng'
 
 // Arrumar o hover dele, para quando tiver .show no responsivo, nao ficar uma barra azul gigante
 // Fazer com que identifique que pagina estou e daixar o hover ativado
+// Tirar a sombra preta que forma logo ao acionar o navbar-scrolled
 
 function NavBar(){
     

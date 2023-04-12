@@ -10,12 +10,11 @@ import { Projetos } from './pages/Projetos';
 import { Sobre } from './pages/Sobre';
 import './styles/global.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { ButtonLng } from './components/ButtonLng';
 
 
 // Adicionar animacoes na entrada de cada pagina
 // Mudar Scroll
-// Cuidar da responsividade
+// Responsividade
 // Analisar a criacao de componentes
 // ButtonHTMLAtributtes como props, ver alguma forma de utilizar isso na aplicacao
 // Arrumar as cores
