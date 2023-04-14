@@ -13,13 +13,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 // Adicionar animacoes na entrada de cada pagina
-// Mudar Scroll
 // Responsividade
+// Responsividade Mobile
 // Analisar a criacao de componentes
 // ButtonHTMLAtributtes como props, ver alguma forma de utilizar isso na aplicacao
 // Arrumar as cores
 // Ver se em algum momento irei precisar de usar o useState/useEffect/Contexts (Provavelmente nao)
-// Add componente que muda idioma dos textos para ingles (chamar atencao de recrutadores gringos)
 function App() {
 
   return (

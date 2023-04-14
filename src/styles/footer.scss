@@ -1,8 +1,7 @@
 .footer {
-    display: block;
     position: fixed;
     bottom: 0 !important;
-    z-index: 9999;
+    z-index: 999;
     background-color: #0e0c14;
     padding-top: 10px;
     margin: 0px;
@@ -93,4 +92,16 @@
             }
         }
     }
+
+    @media (max-width: 767px) {
+        .developed {
+          text-align: center !important;
+          padding: 0px !important;
+        }
+        .social-media{
+            display: flex !important;
+            justify-content: center !important;
+            padding: 0px !important;
+        }
+      }
 }
