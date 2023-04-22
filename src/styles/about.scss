@@ -1,5 +1,5 @@
 .main-content-about{
-    animation: aboutAnimation 2s backwards;
+    animation: aboutAnimation 1s backwards;
 
     @keyframes aboutAnimation {
         0% {
@@ -81,17 +81,13 @@
             
             .presentationTxt{
                 // Ver se arruma essa gambiarra com 12px que deixa o espacamento das duas caixas de texto iguais
-                margin: 0px;
-                margin-right: 12px;
+                margin: 0px 12px 0px 0px;
             }
     
             .profissionalTxt{
-                margin: 0px;
-           
                 >button{    
-                    margin-left: 20px !important;
+                    margin: 21px 0px 0px 20px !important;
                     font-size: 16px;
-                    margin-top: 21px !important;
                 }
             }
             
@@ -104,6 +100,11 @@
                 z-index: 999;
 
             }
+
+        }
+
+        .secondTxtBox{
+            padding-left: 0px !important;
         }
     
     }

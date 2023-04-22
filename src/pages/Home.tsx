@@ -46,7 +46,7 @@ export function Home(){
                             <ButtonNav variant="outline-primary" onClick={() => navigateTo('/Sobre')} size="lg">{t("Saiba mais")}</ButtonNav>      
                         </Col>
                         <Col md={5}>
-                            <img src={mainHome} alt="" className="photoHome"/>
+                            <img src={mainHome} alt="Desenho de um desenvolvedor" className="photoHome"/>
                         </Col>
                     </Row>
                 </Container>

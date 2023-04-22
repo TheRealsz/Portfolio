@@ -11,7 +11,9 @@ import { Sobre } from './pages/Sobre';
 import './styles/global.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+// Nao digite as coisas em maiusculo - acessibilidade
+// Descobrir como colocar alt nos icones de svg
+// Usar as ferramentas de inspecionar codigo para pegar feedbacks
 // Adicionar animacoes na entrada de cada pagina
 // Responsividade
 // Responsividade Mobile
@@ -19,6 +21,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // ButtonHTMLAtributtes como props, ver alguma forma de utilizar isso na aplicacao
 // Arrumar as cores
 // Ver se em algum momento irei precisar de usar o useState/useEffect/Contexts (Provavelmente nao)
+// Tentar utilizar framer-motion em todas as paginas/componentes/interaçoes
 function App() {
 
   return (

@@ -10,6 +10,7 @@ import { ButtonNav } from "../components/ButtonNav";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+// Responsividade ao diminuir a tela aos poucos
 // Adicionar nome da faculdade?
 // Arrumar o divider de alguma forma, para que ele fique fora das col e ainda conte? ou arruma ele dentro da col msm
 export function Sobre() {
@@ -28,7 +29,7 @@ export function Sobre() {
                 <Particle />
                 <Container className="main-content-about">
                     <Row className="imgRow">
-                        <img src={Foto} alt="Foto minha" />
+                        <img src={Foto} alt="Foto do autor deste site" />
                     </Row>
                     <Row className="contentRow">
                         <Col md={6} className="firstTxtBox">

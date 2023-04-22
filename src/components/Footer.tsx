@@ -24,17 +24,25 @@ export function Footer(){
                 <Col md={6}>
                     <div className="social-media">
                         <ul className="list-socialmedia">
-                            <li onClick={() => redirect('https://github.com/TheRealRobinho')}>
-                                <AiFillGithub/>
+                            <li>
+                                <a href="https://github.com/TheRealRobinho" target="_blank">
+                                    <AiFillGithub/>
+                                </a>
                             </li>
-                            <li onClick={() => redirect('https://www.instagram.com/therealrobs_/')}>
-                                <AiFillInstagram/>
+                            <li>
+                                <a href="https://www.instagram.com/therealrobs_/" target="_blank">
+                                    <AiFillInstagram/>
+                                </a>
                             </li>
-                            <li onClick={() => redirect('https://twitter.com/TheRealRobs__')}>
-                                <AiFillTwitterCircle/>
+                            <li>
+                                <a href="https://twitter.com/TheRealRobs__" target="_blank">
+                                    <AiFillTwitterCircle/>
+                                </a>
                             </li>
-                            <li onClick={() => redirect('https://www.linkedin.com/in/robsondiegoandrade/')}>
-                                <AiFillLinkedin/>
+                            <li>
+                                <a href="https://www.linkedin.com/in/robsondiegoandrade/" target="_blank">
+                                    <AiFillLinkedin/>
+                                </a>
                             </li>
                         </ul>
                     </div>
