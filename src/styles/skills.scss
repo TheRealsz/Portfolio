@@ -1,0 +1,59 @@
+.title {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin-top: 30px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 40px;
+        letter-spacing: 0.5px;
+    }
+
+    span {
+        color: #8bd3dd;
+    }
+}
+
+.calender-github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.skills,
+.tools,
+.calender-github {
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 999;
+    
+    .cardRow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        
+        .col-md-3 {
+            margin-top: 40px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    }
+
+    .react-activity-calendar {
+        color: #fff;
+        --react-activity-calendar-level-0: #ffffff !important;
+        --react-activity-calendar-level-1: #6a99c0 !important;
+        --react-activity-calendar-level-2: #4f6e86 !important;
+        --react-activity-calendar-level-3: #304150 !important;
+        --react-activity-calendar-level-4: #1f2b35 !important;
+
+    }
+
+}

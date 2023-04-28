@@ -1,17 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-h1, p {
-    font-family: 'Montserrat', sans-serif;
-    color: aliceblue;
-}
-
-h1 {
-    font-size: 50px !important;
-}
-
-
 .main-content-home {
     margin-top: 50px;
     height: 500px;
@@ -42,15 +28,23 @@ h1 {
     .left-content {
         margin-top: 200px;
 
-        .name_span {
-            background: -webkit-linear-gradient(135deg, #8bd3dd 0%, #08b699 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+        .text-content {
+            
+            h1 {
+                font-size: 50px;
 
-        .Typewriter {
-            width: 700px;
-            color: #8bd3dd;
+                .name_span {
+                    background: -webkit-linear-gradient(135deg, #8bd3dd 0%, #08b699 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                .Typewriter {
+                    width: 700px;
+                    color: #8bd3dd;
+                }
+
+            }
         }
     }
 

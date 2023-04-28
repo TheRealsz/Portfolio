@@ -22,6 +22,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Arrumar as cores
 // Ver se em algum momento irei precisar de usar o useState/useEffect/Contexts (Provavelmente nao)
 // Tentar utilizar framer-motion em todas as paginas/componentes/interaçoes
+// Utilizar framer motion nos componentes
 function App() {
 
   return (

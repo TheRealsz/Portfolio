@@ -1,14 +1,16 @@
 import { Container, Row, Col } from "react-bootstrap"
 import Particle from "../components/Particle";
-import '../styles/habilidades.scss'
+import '../styles/skills.scss'
 import { Card } from "../components/Card";
 import { SiReact, SiTypescript, SiHtml5, SiCss3, SiBootstrap, SiSass, SiJavascript, SiMysql, SiGit, 
          SiGithub, SiPython, SiFigma, SiVisualstudiocode, SiWindows, SiNpm } from 'react-icons/si'
 import { TbJson } from 'react-icons/tb'
+import GitHubCalendar from 'react-github-calendar'
+
 
 // dias que codei API GITHUB
-// tipo de manipulacao de card https://the-simplefolio.netlify.app/ na parte de projetos
 export function Habilidades() {
+
     return (
         <section>
             <Container fluid id="defaultContainer">
@@ -105,6 +107,11 @@ export function Habilidades() {
                                 <SiFigma />
                             </Card>
                         </Col>
+                    </Row>
+                </Container>
+                <Container className="calender-github">
+                    <Row>
+                        <GitHubCalendar username="TheRealRobinho" fontSize={18} blockSize={17} blockMargin={6}/>
                     </Row>
                 </Container>
             </Container>
