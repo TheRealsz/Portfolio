@@ -25,7 +25,11 @@
         "Ler": "Read",
         "Moda": "Fashion",
         "Meu foco atual é adquirir o maximo de conhecimento nessas tecnologias para conseguir um emprego na area e poder impactar positivamente a vida de outras pessoas com minhas habilidades e conhecimentos. ": "My current focus is adquire the maximum knowledge in these technologies to get a job in the area and be able to positively impact the other peoples lives with my skills and knowledge. ",
-        "Se estiver interessado em me convidar para um projeto ou queira que eu construa um, pode entrar em contato comigo pelas minhas redes sociais ou por aqui.": "If you are interested to invite me for a project or want me to build one, you can contact me through my social medias or here."
+        "Se estiver interessado em me convidar para um projeto ou queira que eu construa um, pode entrar em contato comigo pelas minhas redes sociais ou por aqui.": "If you are interested to invite me for a project or want me to build one, you can contact me through my social medias or here.",
+        "Habilidade": "Professional",
+        "profissionais" : "skills",
+        "Minhas": "My",
+        "ferramentas": "tools"
     }
 
 }
