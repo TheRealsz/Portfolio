@@ -7,6 +7,7 @@ import { SiReact, SiTypescript, SiHtml5, SiCss3, SiBootstrap, SiSass, SiJavascri
 import { TbJson } from 'react-icons/tb'
 import { useTranslation } from "react-i18next"
 
+// Substituir cards por 3d? (Adrian jsmastery)
 export function Habilidades() {
     
     const { t } = useTranslation()

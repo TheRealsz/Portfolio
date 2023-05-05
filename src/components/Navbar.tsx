@@ -11,7 +11,6 @@ import { ButtonLng } from './ButtonLng'
 
 
 // Arrumar o hover dele, para quando tiver .show no responsivo, nao ficar uma barra azul gigante
-// Fazer com que identifique que pagina estou e daixar o hover ativado
 // Tirar a sombra preta que forma logo ao acionar o navbar-scrolled
 
 function NavBar(){
@@ -38,27 +37,27 @@ function NavBar(){
                 <Navbar.Brand href="/" className="icon-nav">TheReal 😎</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav">{iconComponent}</Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="ms-auto">
+                    <Nav className="ms-auto" defaultActiveKey={"/"}>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/">Home</Nav.Link>
+                            <Nav.Link as={Link} to="/" eventKey={"/"}>Home</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/Sobre">{t('Sobre')}</Nav.Link>
+                            <Nav.Link as={Link} to="/Sobre" eventKey={"/Sobre"}>{t('Sobre')}</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/Habilidades">{t('Habilidades')}</Nav.Link>
+                            <Nav.Link as={Link} to="/Habilidades" eventKey={"/Habilidades"}>{t('Habilidades')}</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/Projetos">{t('Projetos')}</Nav.Link>
+                            <Nav.Link as={Link} to="/Projetos" eventKey={"/Projetos"}>{t('Projetos')}</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/Experiencia">{t('Experiencia')}</Nav.Link>
+                            <Nav.Link as={Link} to="/Experiencia" eventKey={"/Experiencia"}>{t('Experiencia')}</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/CV">CV</Nav.Link>
+                            <Nav.Link as={Link} to="/CV" eventKey={"/CV"}>CV</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/Contato">{t('Contato')}</Nav.Link>
+                            <Nav.Link as={Link} to="/Contato" eventKey={"/Contato"}>{t('Contato')}</Nav.Link>
                         </Nav.Item>
                         <ButtonLng/>
                     </Nav>

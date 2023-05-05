@@ -3,10 +3,16 @@ import {ThemeInput , Activity} from "react-activity-calendar";
 import Particle from "../components/Particle";
 import { Container, Row, Col } from "react-bootstrap"
 
+// Cards com imagem, titulo, descricao, botao para repo e para a demo
+// Animation no card
+// Todos os projetos, até o CRUD e Figma
+// Made with?
+
 export function Projetos() {
 
+    // Visualizar funcoes
     const explicitTheme: ThemeInput = {
-        light: ['#fff', '#0F516C']
+        light: ['#fff', '#022C3E']
       }; 
   
       const selectLastHalfYear = (contributions: Activity[]) => {
@@ -29,6 +35,7 @@ export function Projetos() {
     return (
         <Container fluid id="defaultContainer">
             <Particle />
+            <h1>Projetos que produzi</h1>
             <Container className="calender-github">
                 <Row>
                     <GitHubCalendar transformData={selectLastHalfYear} username="TheRealRobinho" colorScheme="light" fontSize={17} blockSize={17} style={{ color: '#fff' }} theme={explicitTheme} blockMargin={6} />

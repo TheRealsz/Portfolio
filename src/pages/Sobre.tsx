@@ -13,6 +13,7 @@ import { useTranslation } from "react-i18next";
 // Responsividade ao diminuir a tela aos poucos
 // Adicionar nome da faculdade?
 // Arrumar o divider de alguma forma, para que ele fique fora das col e ainda conte? ou arruma ele dentro da col msm
+// No list, ao inves de ser topicos, fazer pequenos cards (adrian js mastery overview). Caso faça a mudanca na pagina skills, trazer aqueles cards pro list
 export function Sobre() {
 
     const { t } = useTranslation()
