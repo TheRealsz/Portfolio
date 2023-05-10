@@ -1,0 +1,167 @@
+.calender-github, .projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 999;
+
+    .project-card{
+        position: relative !important;
+        width: 350px !important;
+        height: 180px !important;
+        background: #fff !important;
+        transition: 1s !important;
+
+        &:hover {
+            height: 450px !important;
+        }
+
+        
+        .lines {
+            position: absolute;
+            inset: 0;
+            background: #000;
+            overflow: hidden;
+            
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 600px;
+                height: 120px;
+                background: linear-gradient(transparent, #8bd3dd, #8bd3dd, transparent);
+                animation: cardAnimate 4s linear infinite;
+                animation-play-state: paused;
+            }
+            
+            @keyframes cardAnimate {
+                0%{
+                    transform: translate(-50%, -50%) rotate(0deg);  
+                }
+                100%{
+                    transform: translate(-50%, -50%) rotate(360deg);
+                }
+            }
+            
+            &::after{
+                content: '';
+                position: absolute;
+                inset: 3px;
+                background: #292929 ;
+            }
+            
+        }
+        
+        &:hover .lines::before{
+            animation-play-state: running;
+        }
+        
+        .img-project{
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            width: 150px;
+            height: 150px;
+            transform: translateX(-50%);
+            background:#000;
+            transition: 0.5s;
+            z-index: 10;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 500px;
+                height: 150px;
+                transform: translate(-50%, -50%);
+                background: linear-gradient(transparent, #0f4b7c, #0f4b7c, transparent);
+                animation: imgAnimate 6s linear infinite;
+                animation-play-state: paused;
+
+            }
+
+            @keyframes imgAnimate {
+                0%{
+                    transform: translate(-50%, -50%) rotate(0deg);  
+                }
+                100%{
+                    transform: translate(-50%, -50%) rotate(360deg);
+                }
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                inset: 3px;
+                background: #292929 ;
+            }
+        }
+        
+        &:hover .img-project{
+            top: 25px;
+            width: 250px;
+            height: 250px;
+        }
+                
+        &:hover .img-project::before{
+            animation-play-state: running;
+        }
+
+        img {
+            position: absolute;
+            width: 130px;
+            z-index: 999;
+            transition: 0.5s;
+        }
+
+        &:hover img{
+            width: 200px;
+        } 
+        
+        .content{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            overflow: hidden;
+
+            .resume {
+                padding: 30px 20px;
+                text-align: center;
+                width: 100%;
+                transition: 0.5s;
+                transform: translateY(145px);
+
+                h2 {
+                    font-size: 40px;
+                    color: #8bd3dd;
+                    line-height: 19px;
+                }
+
+                p{
+                    font-size: 15px;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+            }
+        }
+
+        &:hover .content .details{
+            transform: translateY(0px);
+        }
+        
+        &:hover .content .details .resume p {
+            opacity: 1;
+        }
+    }
+}

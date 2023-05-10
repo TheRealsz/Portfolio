@@ -2,6 +2,8 @@ import GitHubCalendar from "react-github-calendar";
 import {ThemeInput , Activity} from "react-activity-calendar";
 import Particle from "../components/Particle";
 import { Container, Row, Col } from "react-bootstrap"
+import Brazil from '../assets/Brazil.png'
+import '../styles/projects.scss'
 
 // Cards com imagem, titulo, descricao, botao para repo e para a demo
 // Animation no card
@@ -40,6 +42,20 @@ export function Projetos() {
                 <Row>
                     <GitHubCalendar transformData={selectLastHalfYear} username="TheRealRobinho" colorScheme="light" fontSize={17} blockSize={17} style={{ color: '#fff' }} theme={explicitTheme} blockMargin={6} />
                 </Row>
+            </Container>
+            <Container className="projects">
+                <div className="project-card">
+                    <div className="lines"></div>
+                    <div className="img-project">
+                        <img src={Brazil} alt="" />
+                    </div>
+                    <div className="content">
+                        <div className="resume">
+                            <h2>Teste</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ipsam recusandae enim error delectus cum? Quae esse aliquid incidunt numquam, perferendis tempora vitae molestias dolor iure quaerat, deleniti nobis quas!</p>
+                        </div>
+                    </div>
+                </div>
             </Container>
         </Container>
 
