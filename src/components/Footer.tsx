@@ -35,11 +35,6 @@ export function Footer(){
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/TheRealRobs__" target="_blank">
-                                    <AiFillTwitterCircle/>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="https://www.linkedin.com/in/robsondiegoandrade/" target="_blank">
                                     <AiFillLinkedin/>
                                 </a>

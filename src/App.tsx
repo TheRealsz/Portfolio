@@ -24,6 +24,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Ver se em algum momento irei precisar de usar o useState/useEffect/Contexts (Provavelmente nao)
 // Tentar utilizar framer-motion em todas as paginas/componentes/interaçoes
 // Utilizar framer motion nos componentes
+// Pensar em alguma forma de juntar os botoes e setar as config na hora de add o component
+
 function App() {
 
   return (
