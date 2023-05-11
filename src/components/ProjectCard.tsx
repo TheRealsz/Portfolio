@@ -4,8 +4,12 @@ import { ReactNode } from 'react'
 import '../styles/projectCard.scss'
 
 type projectCardProps = {
-    children : ReactNode,
-    image: string
+    image: string,
+    titulo: string,
+    descricao: string,
+    urlGithub: string,
+    urlDemo?: string,
+    disabled?: boolean
 }
 
 export function ProjectCard(props : projectCardProps){
@@ -17,10 +21,11 @@ export function ProjectCard(props : projectCardProps){
         </div>
         <div className="content">
             <div className="resume">
-                {props.children}
+                <h2>{props.titulo}</h2>
+                <p>{props.descricao}</p>
                 <div className="buttons-card">
-                    <Button size="sm" className="buttonCard"> <AiFillGithub /> Github</Button>
-                    <Button size="sm" className="buttonCard">Demo</Button>
+                    <Button size="sm" className="buttonCard" href={props.urlGithub} target="blank_"> <AiFillGithub /> Github</Button>
+                    <Button size="sm" className="buttonCard" href={props.urlDemo} disabled={props.disabled} target="blank_">Demo</Button>
                 </div>
             </div>
         </div>

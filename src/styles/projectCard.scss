@@ -1,9 +1,12 @@
+// Arrumar as cores deste card
+
 .project-card {
     position: relative !important;
     width: 350px !important;
     height: 180px !important;
     background: #fff !important;
     transition: 1s !important;
+    margin-bottom: 80px;
 
     &:hover {
         height: 550px !important;
@@ -136,9 +139,11 @@
             transform: translateY(145px);
 
             h2 {
-                font-size: 40px;
+                font-size: 30px;
                 color: #8bd3dd;
                 line-height: 19px;
+                font-weight: bolder;
+                letter-spacing: 1px;
             }
 
             p {
@@ -162,6 +167,12 @@
                     color: #000;
                     border-style: none;
                     font-weight: bold;
+                    transition: 0.5s;
+
+                    &:hover {
+                        box-shadow: 0 0 10px #0f4b7c, 0 0 20px #0f4b7c, 0 0 30px #0f4b7c !important;
+                        transition-delay: 0.2s !important;
+                    }
 
                     svg {
                         margin-right: 2px;
