@@ -1,198 +1,92 @@
-// Arrumar as cores deste card
 
 .project-card {
     position: relative !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
     width: 350px !important;
-    height: 180px !important;
-    background: #fff !important;
-    transition: 1s !important;
+    height: 220px !important;
+    transition: 0.5s !important;
+    border-radius: 20px;
     margin-bottom: 80px;
+
+    .imgProject {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+
+        img {
+            max-width: 200px;
+            max-height: 200px;
+            transition: 1s;
+        }
+    }
 
     &:hover {
         height: 550px !important;
     }
 
 
-    .lines {
-        position: absolute;
-        inset: 0;
-        background: #000;
-        overflow: hidden;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 670px;
-            height: 120px;
-            background: linear-gradient(transparent, #8bd3dd, #8bd3dd, transparent);
-            animation: cardAnimate 4s linear infinite;
-            animation-play-state: paused;
-        }
-
-        @keyframes cardAnimate {
-            0% {
-                transform: translate(-50%, -50%) rotate(0deg);
-            }
-
-            100% {
-                transform: translate(-50%, -50%) rotate(360deg);
-            }
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            inset: 3px;
-            background: #110e1a;
-        }
-
-    }
-
-    &:hover .lines::before {
-        animation-play-state: running;
-    }
-
-    .img-project {
-        position: absolute;
-        top: -60px;
-        left: 50%;
-        width: 150px;
-        height: 150px;
-        transform: translateX(-50%);
-        background: #000;
-        transition: 0.5s;
-        z-index: 10;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 500px;
-            height: 150px;
-            transform: translate(-50%, -50%);
-            background: linear-gradient(transparent, #0f4b7c, #0f4b7c, transparent);
-            animation: imgAnimate 6s linear infinite;
-            animation-play-state: paused;
-
-        }
-
-        @keyframes imgAnimate {
-            0% {
-                transform: translate(-50%, -50%) rotate(0deg);
-            }
-
-            100% {
-                transform: translate(-50%, -50%) rotate(360deg);
-            }
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            inset: 3px;
-            background: #110e1a;
-        }
-    }
-
-    &:hover .img-project {
-        top: 25px;
-        width: 250px;
-        height: 250px;
-    }
-
-    &:hover .img-project::before {
-        animation-play-state: running;
-    }
-
-    img {
-        position: absolute;
-        width: 130px;
-        z-index: 999;
-        transition: 0.5s;
-    }
-
-    &:hover img {
-        width: 200px;
-    }
-
     .content {
+        display: block;
         position: absolute;
         width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        overflow: hidden;
+        height: 30px;
+        top: 220px;
+        text-align: center;
+        opacity: 0;
+        padding: 0px 20px;
 
-        .resume {
-            padding: 5px 20px;
-            text-align: center;
-            width: 100%;
-            transition: 0.5s;
-            transform: translateY(145px);
+        .buttons-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            h2 {
-                font-size: 30px;
-                color: #8bd3dd;
-                line-height: 19px;
-                font-weight: bolder;
-                letter-spacing: 1px;
-            }
-
-            p {
-                font-size: 15px;
-                opacity: 0;
-                transition: 0.5s;
-            }
-
-            .buttons-card {
+            .buttonCard {
+                margin: 0px 10px;
+                padding: 5px 20px;
                 display: flex;
-                justify-content: center;
                 align-items: center;
-                opacity: 0;
+                background-color: #fff;
+                color: #000;
+                border-style: none;
+                font-weight: bold;
+                transition: 0.5s;
 
-                .buttonCard {
-                    margin: 0px 10px;
-                    padding: 5px 20px;
-                    display: flex;
-                    align-items: center;
-                    background-color: #fff;
-                    color: #000;
-                    border-style: none;
-                    font-weight: bold;
-                    transition: 0.5s;
+                &:hover {
+                    box-shadow: 0 0 10px #0f4b7c, 0 0 20px #0f4b7c, 0 0 30px #0f4b7c !important;
+                    transition-delay: 0.2s !important;
+                }
 
-                    &:hover {
-                        box-shadow: 0 0 10px #0f4b7c, 0 0 20px #0f4b7c, 0 0 30px #0f4b7c !important;
-                        transition-delay: 0.2s !important;
-                    }
-
-                    svg {
-                        margin-right: 2px;
-                    }
+                svg {
+                    margin-right: 2px;
                 }
             }
         }
     }
 
-    &:hover .content .resume {
-        transform: translateY(0px);
-        padding: 20px 20px;
+    &:hover .content{
+        transition: 1s;
+        animation: contentAnimation 1s forwards;
+
+        @keyframes contentAnimation {
+            0%{
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100%{
+                opacity: 1;
+            }
+        }
     }
 
-    &:hover .content .resume h2 {
-        margin-bottom: 20px;
-    }
-
-    &:hover .content .resume p,
-    &:hover .content .resume .buttons-card {
-        opacity: 1;
-    }
 }
+
+
