@@ -1,3 +1,5 @@
+// Se pa colocar um hover igual o do footer nos icones das tecnologias
+// Arrumar bug que ao encostar no margin do project-card ele considera como hover, colocar o project card dentro de outra div que tenha esse margin
 
 .project-card {
     position: relative !important;
@@ -16,17 +18,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 5px;
+        padding-top: 10px;
 
         img {
-            max-width: 200px;
+            max-width: 300px;
             max-height: 200px;
+            border-radius: 20px;
             transition: 1s;
         }
     }
 
     &:hover {
-        height: 550px !important;
+        height: 570px !important;
     }
 
 
@@ -66,14 +69,24 @@
                 }
             }
         }
+
+        .made {
+            margin-top: 20px;
+
+            .test {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 
-    &:hover .content{
+    &:hover .content {
         transition: 1s;
         animation: contentAnimation 1s forwards;
 
         @keyframes contentAnimation {
-            0%{
+            0% {
                 opacity: 0;
             }
 
@@ -81,12 +94,10 @@
                 opacity: 0.5;
             }
 
-            100%{
+            100% {
                 opacity: 1;
             }
         }
     }
 
 }
-
-

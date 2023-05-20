@@ -75,18 +75,9 @@
                         color: palevioletred;
                         transition: .3s;
                     }
-                }    
-                
-                &:nth-child(3):hover{
-                    box-shadow: 0 0 25px lightblue;
-                    transform: scale(1.2);    
-                    svg {
-                        color: lightblue;
-                        transition: .3s;
-                    }
-                }    
+                }     
 
-                &:nth-child(4):hover{
+                &:nth-child(3):hover{
                     box-shadow: 0 0 25px blue;
                     transform: scale(1.2);    
                     svg {

@@ -2,7 +2,6 @@ import { Button } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
 import { SiFigma } from 'react-icons/si'
 import { ReactNode, useState } from 'react'
-import Ada from '../assets/Ada.png'
 import '../styles/projectCard.scss'
 
 type projectCardProps = {
@@ -13,32 +12,40 @@ type projectCardProps = {
     url?: string,
     urlDemo?: string,
     disabled?: boolean,
-    icon?: boolean,
+    changeButton?: boolean,
     children?: ReactNode
 }
 
-// Descobrir como posso dar o set la da pagina de projetos para que mude o icone do botao
+export function ProjectCard(props: projectCardProps) {
+    const [iconButton, setIconButton] = useState(false)
 
-export function ProjectCard(props : projectCardProps){
-    const [iconButton, setIconButton] = useState(true)
+    const verTypeButton = props.changeButton;
 
-    const typeOfText = iconButton ? "Github" : "Figma"
-    const typeOfbutton =<Button size="sm" className="buttonCard" href={props.url}>{iconButton? <AiFillGithub/> : <SiFigma/>}{typeOfText}</Button>
+    if (verTypeButton !== iconButton) {
+        setIconButton(!iconButton)
+    }
+
+    const typeOfbutton = <Button size="sm" className="buttonCard" href={props.url} target="_blank">{iconButton ? <SiFigma/> : <AiFillGithub />}{iconButton ? "Figma" : "Github"}</Button>
 
     return (
-    <div className="project-card">
-        <div className="imgProject">   
-            <img src={props.image} alt={props.alt} />
-        </div>
-        <div className="content">            
+        <div className="project-card">
+            <div className="imgProject">
+                <img src={props.image} alt={props.alt} />
+            </div>
+            <div className="content">
                 <h2>{props.titulo}</h2>
                 <p>{props.descricao}</p>
-            <div className="buttons-card">
-                {typeOfbutton}
-                <Button size="sm" className="buttonCard" href={props.urlDemo} disabled={props.disabled}>Demo</Button>
+                <div className="buttons-card">
+                    {typeOfbutton}
+                    <Button size="sm" className="buttonCard" href={props.urlDemo} disabled={props.disabled} target="_blank">Demo</Button>
+                </div>
+                <div className="made">
+                    <p>Made with</p>
+                    <div className="test">
+                        {props.children}
+                    </div>
+                </div>
             </div>
-            {props.children}
         </div>
-    </div>
     )
 }
