@@ -1,103 +1,92 @@
 // Se pa colocar um hover igual o do footer nos icones das tecnologias
-// Arrumar bug que ao encostar no margin do project-card ele considera como hover, colocar o project card dentro de outra div que tenha esse margin
 
-.project-card {
-    position: relative !important;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset !important;
-    background-color: rgba(255, 255, 255, 0.05) !important;
-    width: 350px !important;
-    height: 220px !important;
-    transition: 0.5s !important;
-    border-radius: 20px;
+.boxProjectCard {
     margin-bottom: 80px;
 
-    .imgProject {
+    .project-card {
+        position: relative;
         display: flex;
         justify-content: center;
-        align-items: center;
-        padding-top: 10px;
-
-        img {
-            max-width: 300px;
-            max-height: 200px;
-            border-radius: 20px;
-            transition: 1s;
-        }
-    }
-
-    &:hover {
+        align-items: flex-start;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        background-color: rgba(255, 255, 255, 0.05) !important;
+        width: 350px !important;
         height: 570px !important;
-    }
+        transition: 0.5s !important;
+        border-radius: 20px;
+        margin: 0px !important;
 
+        
+        &:hover {
+            box-shadow: 0 0 10px #0f4b7c, 0 0 20px #0f4b7c, 0 0 30px #0f4b7c !important;
+            transform: scale(1.1);
+        }
 
-    .content {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 30px;
-        top: 220px;
-        text-align: center;
-        opacity: 0;
-        padding: 0px 20px;
-
-        .buttons-card {
+        .imgProject {
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-top: 10px;
 
-            .buttonCard {
-                margin: 0px 10px;
-                padding: 5px 20px;
-                display: flex;
-                align-items: center;
-                background-color: #fff;
-                color: #000;
-                border-style: none;
-                font-weight: bold;
-                transition: 0.5s;
-
-                &:hover {
-                    box-shadow: 0 0 10px #0f4b7c, 0 0 20px #0f4b7c, 0 0 30px #0f4b7c !important;
-                    transition-delay: 0.2s !important;
-                }
-
-                svg {
-                    margin-right: 2px;
-                }
+            img {
+                max-width: 300px;
+                max-height: 200px;
+                border-radius: 20px;
+                transition: 1s;
             }
         }
 
-        .made {
-            margin-top: 20px;
 
-            .test {
+        .content {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            top: 220px;
+            text-align: center;
+            padding: 0px 20px;
+
+            h2 {
+                padding: 5px 0px;
+            }
+ 
+            .buttons-card {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                .buttonCard {
+                    margin: 0px 10px;
+                    padding: 5px 20px;
+                    display: flex;
+                    align-items: center;
+                    background-color: #fff;
+                    color: #000;
+                    border-style: none;
+                    font-weight: bold;
+                    transition: 0.5s;
+
+                    &:hover {
+                        box-shadow: 0 0 10px #0f4b7c, 0 0 20px #0f4b7c, 0 0 30px #0f4b7c !important;
+                        transform: scale(1.05);
+                    }
+
+                    svg {
+                        margin-right: 2px;
+                    }
+                }
+            }
+
+            .made {
+                margin-top: 20px;
+
+                .test {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
         }
+
     }
-
-    &:hover .content {
-        transition: 1s;
-        animation: contentAnimation 1s forwards;
-
-        @keyframes contentAnimation {
-            0% {
-                opacity: 0;
-            }
-
-            50% {
-                opacity: 0.5;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-    }
-
 }

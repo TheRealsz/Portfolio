@@ -12,7 +12,8 @@ import Ada from '../assets/Ada.png'
 import '../styles/projects.scss'
 
 // Arrumar botao demo disabled
-// Arrumar as imagens, ou deixar tudo com um logo ou tudo com imagem de parte do app
+// Arrumar as imagens
+// Add alts
 
 export function Projetos() {
 
@@ -41,12 +42,14 @@ export function Projetos() {
     return (
         <Container fluid id="defaultContainer">
             <Particle />
-            <h1>Projetos que produzi</h1>
             {/* <Container className="calender-github">
                 <Row>
                     <GitHubCalendar transformData={selectLastHalfYear} username="TheRealRobinho" colorScheme="light" fontSize={17} blockSize={17} style={{ color: '#fff' }} theme={explicitTheme} blockMargin={6} />
                 </Row>
             </Container> */}
+            <div className="title">
+                <h1>Projetos já <span>construidos</span></h1>
+            </div>
             <Container className="projects">
                 <Row>
                     <Col md={4}>
