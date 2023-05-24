@@ -2,16 +2,19 @@ import { Container, Row, Col } from "react-bootstrap"
 import Particle from "../components/Particle";
 import '../styles/skills.scss'
 import { Card } from "../components/Card";
-import { SiReact, SiTypescript, SiHtml5, SiCss3, SiBootstrap, SiSass, SiJavascript, SiMysql, SiGit, 
-         SiGithub, SiPython, SiFigma, SiVisualstudiocode, SiWindows, SiNpm } from 'react-icons/si'
+import {
+    SiReact, SiTypescript, SiHtml5, SiCss3, SiBootstrap, SiSass, SiJavascript, SiMysql, SiGit,
+    SiGithub, SiPython, SiFigma, SiVisualstudiocode, SiWindows, SiNpm
+} from 'react-icons/si'
 import { TbJson } from 'react-icons/tb'
 import { useTranslation } from "react-i18next"
 
 // Substituir cards por 3d? (Adrian jsmastery)
+// Add Animaçao ao abrir a pagina e ao scroll
 export function Habilidades() {
-    
+
     const { t } = useTranslation()
-    
+
     return (
         <section>
             <Container fluid id="defaultContainer">
@@ -83,7 +86,7 @@ export function Habilidades() {
                         </Col>
                     </Row>
                 </Container>
-                <Container className="tools">
+                <Container className="tools" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
                     <div className="title">
                         <h1>{t("Minhas")} <span>{t("ferramentas")}</span></h1>
                     </div>

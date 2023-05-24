@@ -1,9 +1,33 @@
+.projects{ 
+    animation: projectsAnimation 2s backwards;
+
+    @keyframes projectsAnimation {
+        0% {
+            transform: translateY(500px);
+            opacity: 0;
+        }
+
+        50% {
+            transform: translateY(-30px);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+
+    }
+}
+
+.calender-github{
+    margin-bottom: 100px !important;
+}
 
 .calender-github, .projects{
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     position: relative;
     z-index: 999;
 
@@ -25,4 +49,5 @@
             margin-left: 5px;
         }
     }
+
 }

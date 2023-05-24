@@ -9,6 +9,8 @@ import ListEfficient from '../assets/ListEfficient1.png'
 import DateCountdown from '../assets/Date.png'
 import IMC from '../assets/IMC.png'
 import Ada from '../assets/Ada.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import '../styles/projects.scss'
 
 // Arrumar botao demo disabled
@@ -39,16 +41,13 @@ export function Projetos() {
         });
     };
 
+    AOS.init()
+
     return (
         <Container fluid id="defaultContainer">
             <Particle />
-            {/* <Container className="calender-github">
-                <Row>
-                    <GitHubCalendar transformData={selectLastHalfYear} username="TheRealRobinho" colorScheme="light" fontSize={17} blockSize={17} style={{ color: '#fff' }} theme={explicitTheme} blockMargin={6} />
-                </Row>
-            </Container> */}
             <div className="title">
-                <h1>Projetos já <span>construidos</span></h1>
+                <h1><span>Projetos</span> já construidos</h1>
             </div>
             <Container className="projects">
                 <Row>
@@ -155,6 +154,25 @@ export function Projetos() {
                             </li>
                         </ProjectCard>
                     </Col>
+                </Row>
+            </Container>
+            <div className="title">
+                <h1>Dias <span>codados</span></h1>
+            </div>
+            <Container className="calender-github">
+                <Row>
+                    <div data-aos="zoom-in">
+                        <GitHubCalendar 
+                            transformData={selectLastHalfYear} 
+                            username="TheRealRobinho" 
+                            colorScheme="light" 
+                            fontSize={17} 
+                            blockSize={17} 
+                            style={{ color: '#fff' }} 
+                            theme={explicitTheme} 
+                            blockMargin={6} 
+                        />
+                    </div>
                 </Row>
             </Container>
         </Container>
