@@ -1,9 +1,4 @@
-
-.skills,
-.tools {
-    margin-bottom: 100px;
-    position: relative;
-    z-index: 999;
+.skills{
     animation: skillsAnimation 1.5s backwards;
 
     @keyframes skillsAnimation {
@@ -20,6 +15,14 @@
         }
     }
     
+}
+
+.skills,
+.tools {
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 999;
+
     .cardRow {
         display: flex;
         justify-content: center;

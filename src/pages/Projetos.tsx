@@ -3,13 +3,14 @@ import { ThemeInput, Activity } from "react-activity-calendar";
 import Particle from "../components/Particle";
 import { Container, Row, Col, Button } from "react-bootstrap"
 import { ProjectCard } from "../components/ProjectCard";
-import { SiFigma, SiPython, SiMysql, SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiRiotgames } from 'react-icons/si'
+import { SiFigma, SiPython, SiMysql, SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiRiotgames, SiAxios } from 'react-icons/si'
 import LOL from '../assets/lolLogo.png'
 import ListEfficient from '../assets/ListEfficient1.png'
 import DateCountdown from '../assets/Date.png'
 import IMC from '../assets/IMC.png'
 import Ada from '../assets/Ada.png'
 import AOS from 'aos'
+import { useTranslation } from "react-i18next";
 import 'aos/dist/aos.css'
 import '../styles/projects.scss'
 
@@ -19,6 +20,7 @@ import '../styles/projects.scss'
 
 export function Projetos() {
 
+    const { t } = useTranslation()
     // Visualizar funcoes
     const explicitTheme: ThemeInput = {
         light: ['#fff', '#022C3E']
@@ -47,16 +49,16 @@ export function Projetos() {
         <Container fluid id="defaultContainer">
             <Particle />
             <div className="title">
-                <h1><span>Projetos</span> já construidos</h1>
+                <h1><span>{t("Projetos")}</span> {t("já construidos")}</h1>
             </div>
             <Container className="projects">
                 <Row>
                     <Col md={4}>
                         <ProjectCard
                             image={Ada}
-                            // alt={}
+                            alt="Ada Lovelace"
                             titulo="ADA Uniso"
-                            descricao="Prototipo de um aplicativo que tem como objetivo a interaçao e o esclarecimento de duvidas entre alunos e professores dentro da universidade"
+                            descricao={t("Prototipo de um aplicativo que tem como objetivo a interaçao e o esclarecimento de duvidas entre alunos e professores dentro da universidade")}
                             changeButton={true}
                             url="https://www.figma.com/file/hv16XgK5Hn4kSb91dO0ivh/ADA?type=design&node-id=0%3A1&t=MwlN6YjV6FhRiTFd-1"
                             urlDemo="https://www.figma.com/proto/hv16XgK5Hn4kSb91dO0ivh/ADA?node-id=0-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=0%3A3">
@@ -68,9 +70,9 @@ export function Projetos() {
                     <Col md={4}>
                         <ProjectCard
                             image={ListEfficient}
-                            // alt={}
+                            alt="Tela login List Efficient app"
                             titulo="List Efficient"
-                            descricao="List Efficient é um projeto destinado a todos que buscam organizar suas tarefas seja do dia a dia, do trabalho, da faculdade ou de qualquer outro ramo de sua vida."
+                            descricao={t("List Efficient é um projeto destinado a todos que buscam organizar suas tarefas, como tarefas do dia a dia, do trabalho, da faculdade ou de qualquer outro ramo de sua vida.")}
                             changeButton={false}
                             url="https://github.com/TheRealRobinho/ToDoList"
                             disabled={true}>
@@ -85,9 +87,9 @@ export function Projetos() {
                     <Col md={4}>
                         <ProjectCard
                             image={LOL}
-                            // alt={}
+                            alt="Tela site Random LOL"
                             titulo="Random LOL"
-                            descricao="O Random LOL é um projeto que lhe mostra um personagem do jogo League of Legends de forma aleatória, lhe mostrando seu nome, ícone, habilidades, historia e características do personagem."
+                            descricao={t("O Random LOL é um projeto que lhe mostra um personagem do jogo League of Legends de forma aleatória, lhe mostrando seu nome, ícone, habilidades, historia e características do personagem.")}
                             changeButton={false}
                             url="https://github.com/TheRealRobinho/Random_LOL"
                             disabled={true}>
@@ -106,14 +108,17 @@ export function Projetos() {
                             <li>
                                 <SiRiotgames />
                             </li>
+                            <li>
+                                <SiAxios />
+                            </li>
                         </ProjectCard>
                     </Col>
                     <Col md={4}>
                         <ProjectCard
                             image={DateCountdown}
-                            // alt={}
+                            alt="Tela site Date Countdown"
                             titulo="Date Countdown"
-                            descricao="O Date Countdown foi projetado para o usuário se informar do tempo em que há entre o agora e a data estipulada pelo mesmo."
+                            descricao={t("O Date Countdown foi projetado para o usuário se informar do tempo em que há entre o agora e a data estipulada pelo mesmo.")}
                             changeButton={false}
                             url="https://github.com/TheRealRobinho/Date_Countdown"
                             urlDemo="https://therealrobinho.github.io/Date_Countdown/">
@@ -136,7 +141,7 @@ export function Projetos() {
                             image={IMC}
                             // alt={}
                             titulo="Calculadora IMC"
-                            descricao="A Calculadora IMC foi projetada para ajudar as pessoas a identificar dentro do padrão do IMC se esta dentro do peso ideal para suas características físicas"
+                            descricao={t("A Calculadora IMC foi projetada para ajudar as pessoas a identificar dentro do padrão do IMC se esta dentro do peso ideal para suas características físicas")}
                             changeButton={false}
                             url="https://github.com/TheRealRobinho/Calculadora_IMC"
                             urlDemo="https://therealrobinho.github.io/Calculadora_IMC/Index.html">
@@ -157,7 +162,7 @@ export function Projetos() {
                 </Row>
             </Container>
             <div className="title">
-                <h1>Dias <span>codados</span></h1>
+                <h1>{t("Dias")} <span>{t("codados")}</span></h1>
             </div>
             <Container className="calender-github">
                 <Row>

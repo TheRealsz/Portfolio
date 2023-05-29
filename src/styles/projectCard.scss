@@ -47,9 +47,10 @@
             padding: 0px 20px;
 
             h2 {
+                font-weight: bold;
                 padding: 5px 0px;
             }
- 
+
             .buttons-card {
                 display: flex;
                 justify-content: center;
@@ -80,6 +81,10 @@
             .made {
                 margin-top: 20px;
 
+                >p {
+                    margin-top: 25px; 
+                    margin-bottom: 8px;
+                }
                 .test {
                     display: flex;
                     justify-content: center;

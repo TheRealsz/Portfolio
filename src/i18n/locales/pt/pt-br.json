@@ -1,5 +1,6 @@
 {
     "translation":{
+        "Inicio": "Inicio",
         "Sobre" : "Sobre",
         "Habilidades" : "Habilidades",
         "Projetos" : "Projetos",
@@ -29,7 +30,16 @@
         "Habilidade": "Habilidade",
         "profissionais" : "profissionais",
         "Minhas": "Minhas",
-        "ferramentas": "ferramentas"
+        "ferramentas": "ferramentas",
+        "já construidos": "já construidos",
+        "Feito com": "Feito com",
+        "Prototipo de um aplicativo que tem como objetivo a interaçao e o esclarecimento de duvidas entre alunos e professores dentro da universidade": "Prototipo de um aplicativo que tem como objetivo a interaçao e o esclarecimento de duvidas entre alunos e professores dentro da universidade",
+        "List Efficient é um projeto destinado a todos que buscam organizar suas tarefas, como tarefas do dia a dia, do trabalho, da faculdade ou de qualquer outro ramo de sua vida.": "List Efficient é um projeto destinado a todos que buscam organizar suas tarefas, como tarefas do dia a dia, do trabalho, da faculdade ou de qualquer outro ramo de sua vida.",
+        "O Random LOL é um projeto que lhe mostra um personagem do jogo League of Legends de forma aleatória, lhe mostrando seu nome, ícone, habilidades, historia e características do personagem.": "O Random LOL é um projeto que lhe mostra um personagem do jogo League of Legends de forma aleatória, lhe mostrando seu nome, ícone, habilidades, historia e características do personagem.",
+        "O Date Countdown foi projetado para o usuário se informar do tempo em que há entre o agora e a data estipulada pelo mesmo.": "O Date Countdown foi projetado para o usuário se informar do tempo em que há entre o agora e a data estipulada pelo mesmo.",
+        "A Calculadora IMC foi projetada para ajudar as pessoas a identificar dentro do padrão do IMC se esta dentro do peso ideal para suas características físicas": "A Calculadora IMC foi projetada para ajudar as pessoas a identificar dentro do padrão do IMC se esta dentro do peso ideal para suas características físicas",
+        "Dias": "Dias",
+        "codados": "codados"
     }
 
 }

@@ -1,5 +1,6 @@
 {
     "translation":{
+        "Inicio": "Home",
         "Sobre" : "About",
         "Habilidades" : "Skills",
         "Projetos" : "Projects",
@@ -29,7 +30,16 @@
         "Habilidade": "Professional",
         "profissionais" : "skills",
         "Minhas": "My",
-        "ferramentas": "tools"
+        "ferramentas": "tools",
+        "já construidos": "already built",
+        "Feito com": "Made with",
+        "Prototipo de um aplicativo que tem como objetivo a interaçao e o esclarecimento de duvidas entre alunos e professores dentro da universidade": "A prototype application that have a objective the interaction and clarification of doubts between students and professors inside a university",
+        "List Efficient é um projeto destinado a todos que buscam organizar suas tarefas, como tarefas do dia a dia, do trabalho, da faculdade ou de qualquer outro ramo de sua vida.": "List Efficient is a project destined to everbody who seeks organize your tasks, like day-to-day tasks, work tasks, universaty tasks ou any other branch of your life",
+        "O Random LOL é um projeto que lhe mostra um personagem do jogo League of Legends de forma aleatória, lhe mostrando seu nome, ícone, habilidades, historia e características do personagem.": "The Random LOL is a project that show you a League of Legends character in a random way, showing your name, icon, skills, history and character details",
+        "O Date Countdown foi projetado para o usuário se informar do tempo em que há entre o agora e a data estipulada pelo mesmo.": "The Date Countdown was made to the user who wants know the time between now and a stipulate date by him",
+        "A Calculadora IMC foi projetada para ajudar as pessoas a identificar dentro do padrão do IMC se esta dentro do peso ideal para suas características físicas": "The BMI calculator was made to help people identify inside of BMI standard if he is on the right weight for your physical characteristics",
+        "Dias": "Days",
+        "codados": "I code"
     }
 
-}
+}   

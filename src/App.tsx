@@ -10,6 +10,7 @@ import { Projetos } from './pages/Projetos';
 import { Sobre } from './pages/Sobre';
 import './styles/global.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ScrollToTop from './components/ScrollTop';
 
 
 // Nao digite as coisas em maiusculo - acessibilidade
@@ -31,6 +32,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Sobre" element={<Sobre />} />

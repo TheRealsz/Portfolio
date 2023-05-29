@@ -39,7 +39,7 @@ function NavBar(){
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto" defaultActiveKey={"/"}>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/" eventKey={"/"}>Home</Nav.Link>
+                            <Nav.Link as={Link} to="/" eventKey={"/"}>{t("Inicio")}</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link as={Link} to="/Sobre" eventKey={"/Sobre"}>{t('Sobre')}</Nav.Link>
