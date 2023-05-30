@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin} fro
 import { useTranslation } from 'react-i18next'
 
 // Deixar responsivo
-
+// Add Outlook
 export function Footer(){
     
     const { t } = useTranslation()

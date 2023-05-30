@@ -1,12 +1,16 @@
 .buttonNav {
+    max-width: 500px !important;
     letter-spacing: 1.2px !important;
     font-weight: bold !important;
     margin-top: 15px !important;
-    padding: 20px 120px !important;
+    padding: 20px 100px !important;
     transition: 0.5s !important;
     background: #4692d1 !important;
     color: #dddcdc !important;
     border-style: none !important;
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
 
     &:hover {
         color: #fff !important;

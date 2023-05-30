@@ -54,9 +54,6 @@ function NavBar(){
                             <Nav.Link as={Link} to="/Experiencia" eventKey={"/Experiencia"}>{t('Experiencia')}</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/CV" eventKey={"/CV"}>CV</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
                             <Nav.Link as={Link} to="/Contato" eventKey={"/Contato"}>{t('Contato')}</Nav.Link>
                         </Nav.Item>
                         <ButtonLng/>
