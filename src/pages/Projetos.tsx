@@ -9,9 +9,7 @@ import ListEfficient from '../assets/ListEfficient1.png'
 import DateCountdown from '../assets/Date.png'
 import IMC from '../assets/IMC.png'
 import Ada from '../assets/Ada.png'
-// import AOS from 'aos'
 import { useTranslation } from "react-i18next";
-// import 'aos/dist/aos.css'
 import '../styles/projects.scss'
 
 // Arrumar botao demo disabled
@@ -43,7 +41,6 @@ export function Projetos() {
         });
     };
 
-    // AOS.init()
 
     return (
         <Container fluid id="defaultContainer">

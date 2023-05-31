@@ -7,14 +7,26 @@ import { ButtonNav } from "../components/ButtonNav"
 import { useTranslation } from "react-i18next"
 import { FiDownload } from "react-icons/fi"
 import CV from '../assets/RobsonDiego_Curriculo2023_06.pdf'
+import Lottie from 'react-lottie';
+import spaceman from '../lotties/happy-spaceman.json';
 import '../styles/home.scss'
 
 
 // Olhar os container e tamanhos no doc do react-bootstrap
-// Algo 3d? (adrian jsmastery)
+// Visualizar outros Lottie
+// Ver se o visualizar curriculo ficara aqui msm
 
 export function Home() {
     const { t } = useTranslation()
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: spaceman,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+        }
+    };
 
     return (
         <section>
@@ -46,7 +58,11 @@ export function Home() {
                             </ButtonNav>
                         </Col>
                         <Col md={5}>
-                            <img src={mainHome} alt="Desenho de um desenvolvedor" className="photoHome" />
+                            <Lottie
+                                options={defaultOptions}
+                                height={400}
+                                width={400}
+                            />
                         </Col>
                     </Row>
                 </Container>

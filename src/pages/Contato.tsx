@@ -1,4 +1,6 @@
+import { Container } from "react-bootstrap"
 import Particle from "../components/Particle"
+import Map from '../components/Map'
 
 // Nao utilize apenas o placeholder - acessibilidade
 // Colocar redes sociais e outlook aqui tambem PARECIDO https://www.abdellatif-laghjaj.ml/contact
@@ -9,6 +11,9 @@ import Particle from "../components/Particle"
 // Ver oq pedir no forms
 export function Contato(){
     return(
-        <Particle/>
+        <Container fluid id="defaultContainer">
+            <Particle/>
+            <Map />
+        </Container>
     )
 }

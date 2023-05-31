@@ -48,11 +48,11 @@
         }
     }
 
-    .photoHome {
-        max-width: 550px;
-        max-height: 550px;
-        width: auto;
-        height: auto;
-        margin-top: 120px;
+    .col-md-5{
+        
+        >div {
+            margin-left: 50px !important;
+            margin-top: 70px !important;
+        }
     }
 }
