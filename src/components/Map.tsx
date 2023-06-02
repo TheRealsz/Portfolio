@@ -1,22 +1,23 @@
-import React from "react";
+
 import {
   ComposableMap,
   Geographies,
   Geography,
   Annotation,
-  ZoomableGroup
 } from "react-simple-maps";
+
+// Tirar o onClick dele
 
 const Map = () => {
   return (
     <ComposableMap
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
-        rotate: [28.0, 20.0, 0],
+        rotate: [55.0, 20.0, 0],
         center: [-5, -3],
-        scale: 670
+        scale: 900
       }}
-      style={{width: "1300px", height: "100%", position: "relative", zIndex: "999"}}
+      style={{width: "100%", height: "760px", position: "relative", zIndex: "999"}}
     >
       <Geographies
         geography="/features.json"

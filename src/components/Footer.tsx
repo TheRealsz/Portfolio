@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap"
 import '../styles/footer.scss'
-import { AiFillGithub, AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
+import { SiMicrosoftoutlook } from 'react-icons/si'
 import { useTranslation } from 'react-i18next'
 
 // Deixar responsivo
@@ -37,6 +38,11 @@ export function Footer(){
                             <li>
                                 <a href="https://www.linkedin.com/in/robsondiegoandrade/" target="_blank">
                                     <AiFillLinkedin/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:Robsondiegoandrade@outlook.com">
+                                    <SiMicrosoftoutlook/>
                                 </a>
                             </li>
                         </ul>
