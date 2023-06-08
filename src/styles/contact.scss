@@ -4,13 +4,58 @@
     padding: 0 0;
     margin: 100px 0px;
     position: absolute;
-    z-index: 999;;  
+    z-index: 999;
 
-    .col-md-7{
+    .col-md-7 {
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
         z-index: 999;
+
+        .backgroundTxt {
+            z-index: 999;
+            background-color: #0f0c1b !important;
+            padding: 50px;
+            border-radius: 20px;
+            text-align: justify;
+
+            form {
+                h1 {
+                    span {
+                        color: #8bd3dd;
+                    }
+                }
+
+                p {
+                    padding-bottom: 10px;
+                }
+
+                .mb-3 {
+                    label {
+                        color: #fff;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+
+                    input, textarea{
+                        border: solid 2px #b6b6b6;
+                        border-radius: 10px;
+                        box-shadow: none;
+
+                        &:hover{
+                            border-color: #8bd3dd;
+                        }
+                    }
+                }
+
+                .boxButtons {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+        }
+
     }
 }
