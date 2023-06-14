@@ -4,22 +4,16 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
 import { SiMicrosoftoutlook } from 'react-icons/si'
 import { useTranslation } from 'react-i18next'
 
-// Deixar responsivo
-// Add Outlook
 export function Footer(){
     
     const { t } = useTranslation()
-
-    function redirect(url : string) {
-        window.open(url)
-    }
 
     return(
         <Container fluid className="footer">
             <Row>
                 <Col md={6}>
                     <div className="developed">
-                        <p>{t("Desenvolvido por ")}<strong className="strong-name" onClick={() => redirect('https://github.com/TheRealRobinho')}>Robson Diego</strong></p>
+                        <p>{t("Desenvolvido por ")}<a className="strong-name" href="https://github.com/TheRealRobinho">Robson Diego</a></p>
                     </div>
                 </Col>
                 <Col md={6}>

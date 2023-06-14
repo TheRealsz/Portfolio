@@ -9,8 +9,6 @@ import {
 import { TbJson } from 'react-icons/tb'
 import { useTranslation } from "react-i18next"
 
-// Substituir cards por 3d? (Adrian jsmastery)
-// Add Animaçao ao abrir a pagina e ao scroll
 export function Habilidades() {
 
     const { t } = useTranslation()

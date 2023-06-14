@@ -39,7 +39,15 @@
         "O Date Countdown foi projetado para o usuário se informar do tempo em que há entre o agora e a data estipulada pelo mesmo.": "The Date Countdown was made to the user who wants know the time between now and a stipulate date by him",
         "A Calculadora IMC foi projetada para ajudar as pessoas a identificar dentro do padrão do IMC se esta dentro do peso ideal para suas características físicas": "The BMI calculator was made to help people identify inside of BMI standard if he is on the right weight for your physical characteristics",
         "Dias": "Days",
-        "codados": "I code"
+        "codados": "I code",
+        "Entre em " : "",
+        "contato": "Contact",
+        " comigo": " me!",
+        "Se deseja que eu desenvolva um projeto para voce ou apenas queira dar um oi, me mande uma mensagem!" : "If you want me to develop a project for you or just want to say hi, send me a message!",
+        "Nome": "Name",
+        "Mensagem": "Message",
+        "Enviar": "Send",
+        "Ou me mande um email diretamente": "Or send me a email directly"
     }
 
 }   

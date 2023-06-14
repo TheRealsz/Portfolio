@@ -55,4 +55,36 @@
             margin-top: 70px !important;
         }
     }
+
+    @media (max-width: 425px) {
+        
+        .mainRowHome{
+            margin-top: 200px !important;
+        }
+        .left-content{
+            padding: 0px;
+        }
+        
+        .text-content {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 0px;
+        }
+
+        .button-content{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+
+        .col-md-5 {
+            padding: 0px;
+
+            .lottie-box{
+                margin-left: 0px !important;
+            }
+        }
+      }
 }

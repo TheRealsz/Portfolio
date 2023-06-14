@@ -19,6 +19,9 @@
                 cursor: pointer;
                 transition: .5s;
                 transform: scale(0.9);
+                font-weight: bold;
+                text-decoration: none;
+                color: #fff;
 
                 &:hover{
                     color: #8bd3dd ;

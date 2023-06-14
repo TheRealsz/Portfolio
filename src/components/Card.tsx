@@ -6,8 +6,6 @@ type CardProps = {
     children: ReactNode
 }
 
-// Colocar titulo em cada card?
-// Adicionar animacao parallex no card?
 export function Card(props: CardProps) {
     return (
         <motion.div whileHover={{ translateY: -20 }} className="card">
@@ -17,3 +15,5 @@ export function Card(props: CardProps) {
         </motion.div>
     )
 }
+
+// Adicionar animacao diferente?

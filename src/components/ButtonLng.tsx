@@ -29,10 +29,10 @@ export function ButtonLng(props: ButtonLngProps) {
   const txtLngComponent = txtLng ? 'Português' : 'English';
 
   return (
-    <Button size="sm" className="buttonLng" onClick={() => handleChangeLanguage()}>
+    <Button size="sm" className="buttonLng" onClick={() => handleChangeLanguage()} {...props}>
       {iconLngComponent} {txtLngComponent}
     </Button>
   )
 }
 
-// Pra uma proxima versao, fazer com que isso vire um dropdown, para que haja a escolha de mais de dois idiomas
+// Proxima versao, dropdown com outros idiomas

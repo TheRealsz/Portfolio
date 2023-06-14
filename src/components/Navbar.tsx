@@ -10,9 +10,6 @@ import { useTranslation } from "react-i18next"
 import { ButtonLng } from './ButtonLng'
 
 
-// Arrumar o hover dele, para quando tiver .show no responsivo, nao ficar uma barra azul gigante
-// Tirar a sombra preta que forma logo ao acionar o navbar-scrolled
-
 function NavBar(){
     
     const {t} = useTranslation() 

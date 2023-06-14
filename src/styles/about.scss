@@ -50,7 +50,6 @@
             .defaultTxt{
                 z-index: 999;
                 background-color: #0f0c1b !important;
-                padding: 10px;
                 border-radius: 20px;
                 text-align: justify;
     
@@ -114,8 +113,9 @@
     }
 
     @media (max-width: 767px) {
+        
         .firstTxtBox{
-            padding: 0px 10px !important;
+            padding: 0px 0px !important;
 
             .presentationTxt{
                 margin-right: 0px !important;
@@ -123,7 +123,8 @@
         }
         .secondTxtBox{
             margin-top: 20px;
-            padding: 0px 10px !important;
+            margin-bottom: 40px;
+            padding: 0px 0px !important;
         }
         .divider{
             display: none !important;

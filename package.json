@@ -25,6 +25,7 @@
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
     "react-github-calendar": "^4.0.0",
+    "react-hot-toast": "^2.4.1",
     "react-i18next": "^12.2.0",
     "react-icons": "^4.8.0",
     "react-lottie": "^1.2.3",

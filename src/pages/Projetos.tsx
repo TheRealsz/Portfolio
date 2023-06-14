@@ -14,7 +14,6 @@ import '../styles/projects.scss'
 
 // Arrumar botao demo disabled
 // Arrumar as imagens
-// Add alts
 
 export function Projetos() {
 
@@ -113,7 +112,7 @@ export function Projetos() {
                     <Col md={4}>
                         <ProjectCard
                             image={DateCountdown}
-                            alt="Tela site Date Countdown"
+                            alt="Tela do site Date Countdown"
                             titulo="Date Countdown"
                             descricao={t("O Date Countdown foi projetado para o usuário se informar do tempo em que há entre o agora e a data estipulada pelo mesmo.")}
                             changeButton={false}
@@ -136,7 +135,7 @@ export function Projetos() {
                     <Col md={4}>
                         <ProjectCard
                             image={IMC}
-                            // alt={}
+                            alt="Tela do site Calculadora IMC"
                             titulo="Calculadora IMC"
                             descricao={t("A Calculadora IMC foi projetada para ajudar as pessoas a identificar dentro do padrão do IMC se esta dentro do peso ideal para suas características físicas")}
                             changeButton={false}

@@ -39,7 +39,15 @@
         "O Date Countdown foi projetado para o usuário se informar do tempo em que há entre o agora e a data estipulada pelo mesmo.": "O Date Countdown foi projetado para o usuário se informar do tempo em que há entre o agora e a data estipulada pelo mesmo.",
         "A Calculadora IMC foi projetada para ajudar as pessoas a identificar dentro do padrão do IMC se esta dentro do peso ideal para suas características físicas": "A Calculadora IMC foi projetada para ajudar as pessoas a identificar dentro do padrão do IMC se esta dentro do peso ideal para suas características físicas",
         "Dias": "Dias",
-        "codados": "codados"
+        "codados": "codados",
+        "Entre em " : "Entre em ",
+        "contato": "contato",
+        " comigo": " comigo",
+        "Se deseja que eu desenvolva um projeto para voce ou apenas queira dar um oi, me mande uma mensagem!" : "Se deseja que eu desenvolva um projeto para voce ou apenas queira dar um oi, me mande uma mensagem!",
+        "Nome": "Nome",
+        "Mensagem": "Mensagem",
+        "Enviar": "Enviar",
+        "Ou me mande um email diretamente": "Ou me mande um email diretamente"
     }
 
 }

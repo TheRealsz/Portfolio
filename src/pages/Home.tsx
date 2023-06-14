@@ -12,7 +12,6 @@ import spaceman from '../lotties/happy-spaceman.json';
 import '../styles/home.scss'
 
 
-// Olhar os container e tamanhos no doc do react-bootstrap
 // Visualizar outros Lottie
 // Ver se o visualizar curriculo ficara aqui msm
 
@@ -52,17 +51,21 @@ export function Home() {
                                     />
                                 </h1>
                             </div>
-                            <ButtonNav variant="outline-primary" href={CV} target="_blank" size="lg">
-                                <FiDownload />
-                                {t("Visualize meu curriculo")}
-                            </ButtonNav>
+                            <div className="button-content">
+                                <ButtonNav variant="outline-primary" href={CV} target="_blank" size="lg">
+                                    <FiDownload />
+                                    {t("Visualize meu curriculo")}
+                                </ButtonNav>
+                            </div>
                         </Col>
                         <Col md={5}>
-                            <Lottie
-                                options={defaultOptions}
-                                height={400}
-                                width={400}
-                            />
+                            <div className="lottie-box">
+                                <Lottie
+                                    options={defaultOptions}
+                                    height={400}
+                                    width={400}
+                                />
+                            </div>
                         </Col>
                     </Row>
                 </Container>

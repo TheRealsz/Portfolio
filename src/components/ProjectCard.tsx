@@ -5,9 +5,6 @@ import { ReactNode, useState } from 'react'
 import { useTranslation } from "react-i18next";
 import '../styles/projectCard.scss'
 
-// Add o drag com o framer motion
-// Mudar a cor de fundo do hover para branco
-
 type projectCardProps = {
     image?: string,
     alt?: string,

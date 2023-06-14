@@ -16,7 +16,7 @@
         border-radius: 20px;
         margin: 0px !important;
 
-        
+
         &:hover {
             box-shadow: 0 0 10px #0f4b7c, 0 0 20px #0f4b7c, 0 0 30px #0f4b7c !important;
             transform: scale(1.1);
@@ -82,9 +82,10 @@
                 margin-top: 20px;
 
                 >p {
-                    margin-top: 25px; 
+                    margin-top: 25px;
                     margin-bottom: 8px;
                 }
+
                 .test {
                     display: flex;
                     justify-content: center;
@@ -92,6 +93,19 @@
                 }
             }
         }
+    }
 
+    @media (max-width: 1024px) {
+        .project-card {
+            width: 300px !important;
+            height: 600px !important;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .boxProjectCard {
+        margin-bottom: 40px;
     }
 }
