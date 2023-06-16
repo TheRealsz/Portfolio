@@ -7,12 +7,8 @@ import toast, { Toaster } from 'react-hot-toast';
 import { useTranslation } from "react-i18next";
 import '../styles/contact.scss'
 
-// Botao disabled ate add algumas info
-// Criar outro botao para enviar? ou usar o buttonNav para dar submit tbm?
-// Pop up pra quando der tudo ok pra msg
 // Tentar traduzir as msg dos toasts e dos placeholders
-// Deixar os inputs required
-// Add animaçao
+
 export function Contato() {
 
     const { t } = useTranslation()
@@ -57,17 +53,17 @@ export function Contato() {
                                 <p>{t('Se deseja que eu desenvolva um projeto para voce ou apenas queira dar um oi, me mande uma mensagem!')}</p>
                                 <Form.Group className="mb-3" controlId="formName">
                                     <Form.Label>{t('Nome')}</Form.Label>
-                                    <Form.Control type="name" placeholder="Digite seu nome" name="name" />
+                                    <Form.Control type="name" placeholder="Digite seu nome" name="name" required/>
                                 </Form.Group>
 
                                 <Form.Group className="mb-3" controlId="formEmail">
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control type="email" placeholder="Digite seu email" name="email"/>
+                                    <Form.Control type="email" placeholder="Digite seu email" name="email" required/>
                                 </Form.Group>
 
                                 <Form.Group className="mb-3" controlId="formMessage">
                                     <Form.Label>{t('Mensagem')}</Form.Label>
-                                    <Form.Control as="textarea" rows={6} placeholder="Digite sua mensagem" name="message"/>
+                                    <Form.Control as="textarea" rows={6} placeholder="Digite sua mensagem" name="message" required/>
                                 </Form.Group>
                                 <div className="boxButtons">
                                     <Button type="submit">{t('Enviar')}</Button>

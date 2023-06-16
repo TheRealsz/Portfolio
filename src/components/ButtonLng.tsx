@@ -34,5 +34,3 @@ export function ButtonLng(props: ButtonLngProps) {
     </Button>
   )
 }
-
-// Proxima versao, dropdown com outros idiomas

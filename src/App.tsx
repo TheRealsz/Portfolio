@@ -14,18 +14,13 @@ import './styles/global.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-// Nao digite as coisas em maiusculo - acessibilidade
-// Descobrir como colocar alt nos icones de svg
-// Usar as ferramentas de inspecionar codigo para pegar feedbacks
-// Adicionar animacoes na entrada de cada pagina
+// Url e direcionamento
+// Arrumar problemas individuais de cada pagina
+// Descobrir como traduzir alts de svg e placeholders de inputs
 // Responsividade
-// Analisar a criacao de componentes
-// ButtonHTMLAtributtes como props, ver alguma forma de utilizar isso na aplicacao
-// Arrumar as cores com base em outros Pc's
-// Ver se em algum momento irei precisar de usar o useState/useEffect/Contexts (Provavelmente nao)
-// Tentar utilizar framer-motion em todas as paginas/componentes/interaçoes
-// Utilizar framer motion nos componentes
-// Pensar em alguma forma de juntar os botoes e setar as config na hora de add o component
+// Usar as ferramentas de inspecionar codigo para pegar feedbacks
+// feedbacks gerais
+// Tirar dependencias que nao usa
 
 function App() {
 

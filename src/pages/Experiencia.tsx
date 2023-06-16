@@ -1,8 +1,44 @@
+import { Col, Container, Row } from "react-bootstrap";
 import Particle from "../components/Particle";
+import Lottie from 'react-lottie';
+import cat from '../lotties/cat-crying.json';
+import { useTranslation } from "react-i18next";
+import '../styles/experience.scss'
 
-// Falar que estou disp pra emprego ou pra algum projeto para trabalhar junto ou um trabalho para fazer so
 export function Experiencia(){
+
+    const { t } = useTranslation()
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: cat,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+        }
+    };
+
     return(
-        <Particle/>
+        <Container fluid id="experienceContainer">
+            <Particle/>
+            <Container className="mainExperience">
+                <Row>
+                    <Col>
+                        <div className="lottie-box">
+                            <Lottie
+                                options={defaultOptions}
+                                height={400}
+                                width={400}
+                            />
+                        </div>
+                    </Col>
+                    <Col>
+                        <div className="textDiv">
+                            <h1>{t("Infelizmente, até o momento, sem nenhuma experiencia profissional...")}</h1>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </Container>
     )
 }

@@ -1,0 +1,37 @@
+
+#experienceContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: -webkit-fill-available;
+    padding: 0 0;
+    margin: 100px 0px;
+    position: absolute;
+    z-index: 999;
+
+    .mainExperience {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       .col{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .textDiv{
+            position: relative;
+            z-index: 999;
+        }
+    
+    }
+
+    @media (max-width: 425px) {
+        .col{
+            padding: 0px;
+            text-align: center;
+        }
+    }
+}
