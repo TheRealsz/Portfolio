@@ -7,7 +7,6 @@ import toast, { Toaster } from 'react-hot-toast';
 import { useTranslation } from "react-i18next";
 import '../styles/contact.scss'
 
-// Tentar traduzir as msg dos toasts e dos placeholders
 
 export function Contato() {
 
@@ -17,10 +16,10 @@ export function Contato() {
     const templateID = process.env.REACT_APP_TEMPLATE_ID || ''
     const publicID = process.env.REACT_APP_PUBLIC_ID || ''
     
-    const successToast = () => toast.success('Mensagem enviada!', {style: {backgroundColor: "green", color: "#fff", top: "50px", position: "relative"}, });
+    const successToast = () => toast.success(t('Mensagem enviada!'), {style: {backgroundColor: "green", color: "#fff", top: "50px", position: "relative"}, });
     const errorToast = () => toast.error('Algo deu errado, tente novamente!', {style: {backgroundColor: "red", color: "#fff", top: "50px", position: "relative"}, });
 
-    // Ver func
+    // Ver func e mudar
     const form = useRef<HTMLFormElement | null>(null);
 
     const sendEmail = (e: React.FormEvent) => {
@@ -42,7 +41,7 @@ export function Contato() {
             <Particle />
             <Container>
             <Toaster />
-                <Row>
+                <Row className="contactRow">
                     <Col md={5}>
                         <Map />
                     </Col>
@@ -63,7 +62,7 @@ export function Contato() {
 
                                 <Form.Group className="mb-3" controlId="formMessage">
                                     <Form.Label>{t('Mensagem')}</Form.Label>
-                                    <Form.Control as="textarea" rows={6} placeholder="Digite sua mensagem" name="message" required/>
+                                    <Form.Control as="textarea" rows={6} placeholder={t("Digite sua mensagem") || ""} name="message" required/>
                                 </Form.Group>
                                 <div className="boxButtons">
                                     <Button type="submit">{t('Enviar')}</Button>

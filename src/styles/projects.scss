@@ -59,7 +59,11 @@
     .title {
         text-align: center;
     }
-    .row {
+    .projectsRow {
         display: block !important;
+
+        .projects { 
+            margin-left: 5px;
+        }
     }
 }

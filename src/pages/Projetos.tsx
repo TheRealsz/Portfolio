@@ -48,7 +48,7 @@ export function Projetos() {
                 <h1><span>{t("Projetos")}</span> {t("já construidos")}</h1>
             </div>
             <Container className="projects">
-                <Row>
+                <Row className="projectsRow">
                     <Col md={4}>
                         <ProjectCard
                             image={Ada}
@@ -57,7 +57,8 @@ export function Projetos() {
                             descricao={t("Prototipo de um aplicativo que tem como objetivo a interaçao e o esclarecimento de duvidas entre alunos e professores dentro da universidade")}
                             changeButton={true}
                             url="https://www.figma.com/file/hv16XgK5Hn4kSb91dO0ivh/ADA?type=design&node-id=0%3A1&t=MwlN6YjV6FhRiTFd-1"
-                            urlDemo="https://www.figma.com/proto/hv16XgK5Hn4kSb91dO0ivh/ADA?node-id=0-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=0%3A3">
+                            urlDemo="https://www.figma.com/proto/hv16XgK5Hn4kSb91dO0ivh/ADA?node-id=0-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=0%3A3"
+                            >
                             <li>
                                 <SiFigma />
                             </li>
@@ -71,6 +72,7 @@ export function Projetos() {
                             descricao={t("List Efficient é um projeto destinado a todos que buscam organizar suas tarefas, como tarefas do dia a dia, do trabalho, da faculdade ou de qualquer outro ramo de sua vida.")}
                             changeButton={false}
                             url="https://github.com/TheRealRobinho/ToDoList"
+                            urlDemo="#"
                             disabled={true}>
                             <li>
                                 <SiPython />
@@ -88,6 +90,7 @@ export function Projetos() {
                             descricao={t("O Random LOL é um projeto que lhe mostra um personagem do jogo League of Legends de forma aleatória, lhe mostrando seu nome, ícone, habilidades, historia e características do personagem.")}
                             changeButton={false}
                             url="https://github.com/TheRealRobinho/Random_LOL"
+                            urlDemo="#"
                             disabled={true}>
                             <li>
                                 <SiHtml5 />
@@ -165,7 +168,7 @@ export function Projetos() {
                     <div data-aos="zoom-in">
                         <GitHubCalendar 
                             transformData={selectLastHalfYear} 
-                            username="TheRealRobinho" 
+                            username="TheRealsz" 
                             colorScheme="light" 
                             fontSize={17} 
                             blockSize={17} 

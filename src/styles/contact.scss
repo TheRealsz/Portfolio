@@ -124,4 +124,23 @@
             }
         }
     }
+
+    @media (max-width: 425px) {
+        .contactRow{
+            width: 425px;
+            margin: 0 !important;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .contactRow{
+            width: 375px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .contactRow{
+            width: 320px;
+        }
+    }
 }

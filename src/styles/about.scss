@@ -118,12 +118,16 @@
             padding: 0px 0px !important;
 
             .presentationTxt{
-                margin-right: 0px !important;
+                margin: 0px !important;
+
+                p, ul{
+                    padding: 5px !important;
+                }
             }
         }
         .secondTxtBox{
             margin-top: 20px;
-            margin-bottom: 40px;
+            margin-bottom: 60px !important;
             padding: 0px 0px !important;
         }
         .divider{

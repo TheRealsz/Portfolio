@@ -26,7 +26,7 @@ export function Footer(){
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/therealrobs_/" target="_blank">
-                                    <AiFillInstagram role="img" aria-label="Icone Instagram"/>
+                                    <AiFillInstagram role="img" aria-label={t("Icone Instagram") || ""}/>
                                 </a>
                             </li>
                             <li>

@@ -10,8 +10,7 @@ import { ButtonNav } from "../components/ButtonNav";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-// Responsividade secondtxtbox mobile menor
-// Mudar foto
+
 export function Sobre() {
 
     const { t } = useTranslation()

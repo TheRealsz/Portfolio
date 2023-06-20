@@ -22,7 +22,7 @@ export function Experiencia(){
         <Container fluid id="experienceContainer">
             <Particle/>
             <Container className="mainExperience">
-                <Row>
+                <Row className="experienceRow">
                     <Col>
                         <div className="lottie-box">
                             <Lottie

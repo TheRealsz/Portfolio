@@ -44,5 +44,13 @@
        h1{
         text-align: center;
        }
+       
       }
+
+      @media (max-width: 320px) {
+        .cardRow, .col-md-3{
+            width: 320px !important;
+            margin: 0px;
+        }
+    }
 }

@@ -29,9 +29,21 @@
     }
 
     @media (max-width: 425px) {
+        .experienceRow{
+            width: 320px;
+        }
         .col{
             padding: 0px;
             text-align: center;
+        }
+
+        .lottie-box{
+            margin: 0px;
+
+            > div, svg {
+                width: 300px !important;
+                height: 300px !important;
+            }
         }
     }
 }

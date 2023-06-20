@@ -47,6 +47,8 @@
         "Se deseja que eu desenvolva um projeto para voce ou apenas queira dar um oi, me mande uma mensagem!" : "If you want me to develop a project for you or just want to say hi, send me a message!",
         "Nome": "Name",
         "Mensagem": "Message",
+        "Digite sua mensagem": "a",
+        "Mensagem enviada!": "r",
         "Enviar": "Send",
         "Ou me mande um email diretamente": "Or send me a email directly"
     }

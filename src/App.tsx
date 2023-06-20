@@ -14,10 +14,11 @@ import './styles/global.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+// Tentar traduzir as msg dos toasts e dos placeholders
+// Descobrir como traduzir alts de svg
+
 // Url e direcionamento
-// Arrumar problemas individuais de cada pagina
-// Descobrir como traduzir alts de svg e placeholders de inputs
-// Responsividade
+
 // Usar as ferramentas de inspecionar codigo para pegar feedbacks
 // feedbacks gerais
 // Tirar dependencias que nao usa

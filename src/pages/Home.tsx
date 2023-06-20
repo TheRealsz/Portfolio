@@ -10,9 +10,6 @@ import spaceman from '../lotties/happy-spaceman.json';
 import '../styles/home.scss'
 
 
-// Visualizar outros Lottie
-// Ver se o visualizar curriculo ficara aqui msm
-
 export function Home() {
     const { t } = useTranslation()
 
