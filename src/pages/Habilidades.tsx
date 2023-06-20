@@ -24,62 +24,62 @@ export function Habilidades() {
                     <Row className="cardRow">
                         <Col md={3}>
                             <Card>
-                                <SiReact />
+                                <SiReact role="img" aria-label="React"/>
                             </Card>
                         </Col>
                         <Col md={3}>
                             <Card>
-                                <SiTypescript />
+                                <SiTypescript role="img" aria-label="Typescript" />
                             </Card>
                         </Col>
                         <Col md={3}>
                             <Card>
-                                <SiHtml5 />
+                                <SiHtml5 role="img" aria-label="HTML 5"/>
                             </Card>
                         </Col>
                         <Col md={3}>
                             <Card>
-                                <SiCss3 />
+                                <SiCss3 role="img" aria-label="CSS 3" />
                             </Card>
                         </Col>
                         <Col md={3}>
                             <Card>
-                                <SiBootstrap />
+                                <SiBootstrap role="img" aria-label="Bootstrap" />
                             </Card>
                         </Col>
                         <Col md={3}>
                             <Card>
-                                <SiSass />
+                                <SiSass role="img" aria-label="Sass" />
                             </Card>
                         </Col>
                         <Col md={3}>
                             <Card>
-                                <SiJavascript />
+                                <SiJavascript role="img" aria-label="Javascript" />
                             </Card>
                         </Col>
                         <Col md={3}>
                             <Card>
-                                <SiMysql />
+                                <SiMysql role="img" aria-label="MySQL" />
                             </Card>
                         </Col>
                         <Col md={3}>
                             <Card>
-                                <SiGit />
+                                <SiGit role="img" aria-label="Git" />
                             </Card>
                         </Col>
                         <Col md={3}>
                             <Card>
-                                <SiGithub />
+                                <SiGithub role="img" aria-label="Github" />
                             </Card>
                         </Col>
                         <Col md={3}>
                             <Card>
-                                <SiPython />
+                                <SiPython role="img" aria-label="Python" />
                             </Card>
                         </Col>
                         <Col md={3}>
                             <Card>
-                                <TbJson />
+                                <TbJson role="img" aria-label="Json" />
                             </Card>
                         </Col>
                     </Row>
@@ -91,22 +91,22 @@ export function Habilidades() {
                     <Row className="cardRow">
                         <Col md={3}>
                             <Card>
-                                <SiVisualstudiocode />
+                                <SiVisualstudiocode role="img" aria-label="Visual studio code" />
                             </Card>
                         </Col>
                         <Col md={3}>
                             <Card>
-                                <SiWindows />
+                                <SiWindows role="img" aria-label="Windows" />
                             </Card>
                         </Col>
                         <Col md={3}>
                             <Card>
-                                <SiNpm />
+                                <SiNpm role="img" aria-label="NPM" />
                             </Card>
                         </Col>
                         <Col md={3}>
                             <Card>
-                                <SiFigma />
+                                <SiFigma role="img" aria-label="Figma" />
                             </Card>
                         </Col>
                     </Row>

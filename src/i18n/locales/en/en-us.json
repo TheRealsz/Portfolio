@@ -34,9 +34,13 @@
         "já construidos": "already built",
         "Feito com": "Made with",
         "Prototipo de um aplicativo que tem como objetivo a interaçao e o esclarecimento de duvidas entre alunos e professores dentro da universidade": "A prototype application that have a objective the interaction and clarification of doubts between students and professors inside a university",
+        "Tela login List Efficient app": "Login screen List Efficient app",
         "List Efficient é um projeto destinado a todos que buscam organizar suas tarefas, como tarefas do dia a dia, do trabalho, da faculdade ou de qualquer outro ramo de sua vida.": "List Efficient is a project destined to everbody who seeks organize your tasks, like day-to-day tasks, work tasks, universaty tasks ou any other branch of your life",
+        "Tela do site Random LOL": "Screen of Random LOL site",
         "O Random LOL é um projeto que lhe mostra um personagem do jogo League of Legends de forma aleatória, lhe mostrando seu nome, ícone, habilidades, historia e características do personagem.": "The Random LOL is a project that show you a League of Legends character in a random way, showing your name, icon, skills, history and character details",
+        "Tela do site Date Countdown": "Screen of Date Countdown site",
         "O Date Countdown foi projetado para o usuário se informar do tempo em que há entre o agora e a data estipulada pelo mesmo.": "The Date Countdown was made to the user who wants know the time between now and a stipulate date by him",
+        "Tela do site Calculadora IMC": "Screen of BMI calculator site",
         "A Calculadora IMC foi projetada para ajudar as pessoas a identificar dentro do padrão do IMC se esta dentro do peso ideal para suas características físicas": "The BMI calculator was made to help people identify inside of BMI standard if he is on the right weight for your physical characteristics",
         "Dias": "Days",
         "codados": "I code",
@@ -44,13 +48,20 @@
         "Entre em " : "",
         "contato": "Contact",
         " comigo": " me!",
+        "Mensagem enviada!": "Message sent!",
+        "Algo deu errado, tente novamente!": "Something went wrong, try again!",
         "Se deseja que eu desenvolva um projeto para voce ou apenas queira dar um oi, me mande uma mensagem!" : "If you want me to develop a project for you or just want to say hi, send me a message!",
         "Nome": "Name",
+        "Digite seu nome": "Insert your name",
+        "Digite seu email": "Insert your email",
         "Mensagem": "Message",
-        "Digite sua mensagem": "a",
-        "Mensagem enviada!": "r",
+        "Digite sua mensagem": "Insert your message",
         "Enviar": "Send",
-        "Ou me mande um email diretamente": "Or send me a email directly"
+        "Ou me mande um email diretamente": "Or send me a email directly",
+        "Icone Github": "Github icon",
+        "Icone Instagram": "Instagram icon",
+        "Icone Linkedin": "Linkedin icon",
+        "Icone Outlook": "Outlook icon"
     }
 
 }   

@@ -14,11 +14,6 @@ import './styles/global.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-// Tentar traduzir as msg dos toasts e dos placeholders
-// Descobrir como traduzir alts de svg
-
-// Url e direcionamento
-
 // Usar as ferramentas de inspecionar codigo para pegar feedbacks
 // feedbacks gerais
 // Tirar dependencias que nao usa

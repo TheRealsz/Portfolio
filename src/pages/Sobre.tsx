@@ -27,7 +27,7 @@ export function Sobre() {
                 <Particle />
                 <Container className="main-content-about">
                     <Row className="imgRow">
-                        <img src={Foto} alt="Foto do autor deste site" />
+                        <img src={Foto} alt="Foto do criador desse site" />
                     </Row>
                     <Row className="contentRow">
                         <Col md={6} className="firstTxtBox">

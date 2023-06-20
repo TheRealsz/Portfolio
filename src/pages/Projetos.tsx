@@ -60,14 +60,14 @@ export function Projetos() {
                             urlDemo="https://www.figma.com/proto/hv16XgK5Hn4kSb91dO0ivh/ADA?node-id=0-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=0%3A3"
                             >
                             <li>
-                                <SiFigma />
+                                <SiFigma role="img" aria-label="Figma"/>
                             </li>
                         </ProjectCard>
                     </Col>
                     <Col md={4}>
                         <ProjectCard
                             image={ListEfficient}
-                            alt="Tela login List Efficient app"
+                            alt={t("Tela login List Efficient app") || ""}
                             titulo="List Efficient"
                             descricao={t("List Efficient é um projeto destinado a todos que buscam organizar suas tarefas, como tarefas do dia a dia, do trabalho, da faculdade ou de qualquer outro ramo de sua vida.")}
                             changeButton={false}
@@ -75,17 +75,17 @@ export function Projetos() {
                             urlDemo="#"
                             disabled={true}>
                             <li>
-                                <SiPython />
+                                <SiPython role="img" aria-label="Python" />
                             </li>
                             <li>
-                                <SiMysql />
+                                <SiMysql role="img" aria-label="MySQL"/>
                             </li>
                         </ProjectCard>
                     </Col>
                     <Col md={4}>
                         <ProjectCard
                             image={LOL}
-                            alt="Tela site Random LOL"
+                            alt={t("Tela do site Random LOL") || ""}
                             titulo="Random LOL"
                             descricao={t("O Random LOL é um projeto que lhe mostra um personagem do jogo League of Legends de forma aleatória, lhe mostrando seu nome, ícone, habilidades, historia e características do personagem.")}
                             changeButton={false}
@@ -93,68 +93,68 @@ export function Projetos() {
                             urlDemo="#"
                             disabled={true}>
                             <li>
-                                <SiHtml5 />
+                                <SiHtml5 role="img" aria-label="HTML 5"/>
                             </li>
                             <li>
-                                <SiCss3 />
+                                <SiCss3 role="img" aria-label="CSS 3"/>
                             </li>
                             <li>
-                                <SiJavascript />
+                                <SiJavascript role="img" aria-label="Javascript"/>
                             </li>
                             <li>
-                                <SiBootstrap />
+                                <SiBootstrap role="img" aria-label="Bootstrap"/>
                             </li>
                             <li>
-                                <SiRiotgames />
+                                <SiRiotgames role="img" aria-label="Riot Games"/>
                             </li>
                             <li>
-                                <SiAxios />
+                                <SiAxios role="img" aria-label="Axios"/>
                             </li>
                         </ProjectCard>
                     </Col>
                     <Col md={4}>
                         <ProjectCard
                             image={DateCountdown}
-                            alt="Tela do site Date Countdown"
+                            alt={t("Tela do site Date Countdown") || ""}
                             titulo="Date Countdown"
                             descricao={t("O Date Countdown foi projetado para o usuário se informar do tempo em que há entre o agora e a data estipulada pelo mesmo.")}
                             changeButton={false}
                             url="https://github.com/TheRealRobinho/Date_Countdown"
                             urlDemo="https://therealrobinho.github.io/Date_Countdown/">
                             <li>
-                                <SiHtml5 />
+                                <SiHtml5 role="img" aria-label="HTML 5"/>
                             </li>
                             <li>
-                                <SiCss3 />
+                                <SiCss3 role="img" aria-label="CSS 3"/>
                             </li>
                             <li>
-                                <SiJavascript />
+                                <SiJavascript role="img" aria-label="Javascript"/>
                             </li>
                             <li>
-                                <SiBootstrap />
+                                <SiBootstrap role="img" aria-label="Bootstrap"/>
                             </li>
                         </ProjectCard>
                     </Col>
                     <Col md={4}>
                         <ProjectCard
                             image={IMC}
-                            alt="Tela do site Calculadora IMC"
+                            alt={t("Tela do site Calculadora IMC") || ""}
                             titulo="Calculadora IMC"
                             descricao={t("A Calculadora IMC foi projetada para ajudar as pessoas a identificar dentro do padrão do IMC se esta dentro do peso ideal para suas características físicas")}
                             changeButton={false}
                             url="https://github.com/TheRealRobinho/Calculadora_IMC"
                             urlDemo="https://therealrobinho.github.io/Calculadora_IMC/Index.html">
                             <li>
-                                <SiHtml5 />
+                                <SiHtml5 role="img" aria-label="HTML 5"/>
                             </li>
                             <li>
-                                <SiCss3 />
+                                <SiCss3 role="img" aria-label="CSS 3"/>
                             </li>
                             <li>
-                                <SiJavascript />
+                                <SiJavascript role="img" aria-label="Javascript"/>
                             </li>
                             <li>
-                                <SiBootstrap />
+                                <SiBootstrap role="img" aria-label="Bootstrap"/>
                             </li>
                         </ProjectCard>
                     </Col>

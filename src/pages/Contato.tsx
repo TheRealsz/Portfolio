@@ -17,7 +17,7 @@ export function Contato() {
     const publicID = process.env.REACT_APP_PUBLIC_ID || ''
     
     const successToast = () => toast.success(t('Mensagem enviada!'), {style: {backgroundColor: "green", color: "#fff", top: "50px", position: "relative"}, });
-    const errorToast = () => toast.error('Algo deu errado, tente novamente!', {style: {backgroundColor: "red", color: "#fff", top: "50px", position: "relative"}, });
+    const errorToast = () => toast.error(t('Algo deu errado, tente novamente!'), {style: {backgroundColor: "red", color: "#fff", top: "50px", position: "relative"}, });
 
     // Ver func e mudar
     const form = useRef<HTMLFormElement | null>(null);
@@ -52,12 +52,12 @@ export function Contato() {
                                 <p>{t('Se deseja que eu desenvolva um projeto para voce ou apenas queira dar um oi, me mande uma mensagem!')}</p>
                                 <Form.Group className="mb-3" controlId="formName">
                                     <Form.Label>{t('Nome')}</Form.Label>
-                                    <Form.Control type="name" placeholder="Digite seu nome" name="name" required/>
+                                    <Form.Control type="name" placeholder={t("Digite seu nome") || ""} name="name" required/>
                                 </Form.Group>
 
                                 <Form.Group className="mb-3" controlId="formEmail">
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control type="email" placeholder="Digite seu email" name="email" required/>
+                                    <Form.Control type="email" placeholder={t("Digite seu email") || ""} name="email" required/>
                                 </Form.Group>
 
                                 <Form.Group className="mb-3" controlId="formMessage">

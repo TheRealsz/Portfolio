@@ -34,9 +34,13 @@
         "já construidos": "já construidos",
         "Feito com": "Feito com",
         "Prototipo de um aplicativo que tem como objetivo a interaçao e o esclarecimento de duvidas entre alunos e professores dentro da universidade": "Prototipo de um aplicativo que tem como objetivo a interaçao e o esclarecimento de duvidas entre alunos e professores dentro da universidade",
+        "Tela login List Efficient app": "Tela login List Efficient app",
         "List Efficient é um projeto destinado a todos que buscam organizar suas tarefas, como tarefas do dia a dia, do trabalho, da faculdade ou de qualquer outro ramo de sua vida.": "List Efficient é um projeto destinado a todos que buscam organizar suas tarefas, como tarefas do dia a dia, do trabalho, da faculdade ou de qualquer outro ramo de sua vida.",
+        "Tela do site Random LOL": "Tela do site Random LOL",
         "O Random LOL é um projeto que lhe mostra um personagem do jogo League of Legends de forma aleatória, lhe mostrando seu nome, ícone, habilidades, historia e características do personagem.": "O Random LOL é um projeto que lhe mostra um personagem do jogo League of Legends de forma aleatória, lhe mostrando seu nome, ícone, habilidades, historia e características do personagem.",
+        "Tela do site Date Countdown": "Tela do site Date Countdown",
         "O Date Countdown foi projetado para o usuário se informar do tempo em que há entre o agora e a data estipulada pelo mesmo.": "O Date Countdown foi projetado para o usuário se informar do tempo em que há entre o agora e a data estipulada pelo mesmo.",
+        "Tela do site Calculadora IMC": "Tela do site Calculadora IMC",
         "A Calculadora IMC foi projetada para ajudar as pessoas a identificar dentro do padrão do IMC se esta dentro do peso ideal para suas características físicas": "A Calculadora IMC foi projetada para ajudar as pessoas a identificar dentro do padrão do IMC se esta dentro do peso ideal para suas características físicas",
         "Dias": "Dias",
         "codados": "codados",
@@ -44,11 +48,20 @@
         "Entre em " : "Entre em ",
         "contato": "contato",
         " comigo": " comigo",
+        "Mensagem enviada!": "Mensagem enviada!",
+        "Algo deu errado, tente novamente!": "Algo deu errado, tente novamente!", 
         "Se deseja que eu desenvolva um projeto para voce ou apenas queira dar um oi, me mande uma mensagem!" : "Se deseja que eu desenvolva um projeto para voce ou apenas queira dar um oi, me mande uma mensagem!",
         "Nome": "Nome",
+        "Digite seu nome": "Digite seu nome",
+        "Digite seu email": "Digite seu email",
         "Mensagem": "Mensagem",
+        "Digite sua mensagem": "Digite sua mensagem",
         "Enviar": "Enviar",
-        "Ou me mande um email diretamente": "Ou me mande um email diretamente"
+        "Ou me mande um email diretamente": "Ou me mande um email diretamente",
+        "Icone Github": "Icone Github",
+        "Icone Instagram": "Icone Instagram",
+        "Icone Linkedin": "Icone Linkedin",
+        "Icone Outlook": "Icone Outlook"
     }
 
 }

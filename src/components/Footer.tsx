@@ -21,7 +21,7 @@ export function Footer(){
                         <ul className="list-socialmedia">
                             <li>
                                 <a href="https://github.com/TheRealRobinho" target="_blank">
-                                    <AiFillGithub role="img" aria-label="Icone Github"/>
+                                    <AiFillGithub role="img" aria-label={t("Icone Github") || ""}/>
                                 </a>
                             </li>
                             <li>
@@ -31,12 +31,12 @@ export function Footer(){
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/in/robsondiegoandrade/" target="_blank">
-                                    <AiFillLinkedin role="img" aria-label="Icone Linkedin"/>
+                                    <AiFillLinkedin role="img" aria-label={t("Icone Linkedin") || ""}/>
                                 </a>
                             </li>
                             <li>
                                 <a href="mailto:Robsondiegoandrade@outlook.com">
-                                    <SiMicrosoftoutlook role="img" aria-label="Icone Outlook"/>
+                                    <SiMicrosoftoutlook role="img" aria-label={t("Icone Outlook") || ""}/>
                                 </a>
                             </li>
                         </ul>
