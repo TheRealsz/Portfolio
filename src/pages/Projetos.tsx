@@ -12,13 +12,9 @@ import Ada from '../assets/Ada.png'
 import { useTranslation } from "react-i18next";
 import '../styles/projects.scss'
 
-// Arrumar botao demo disabled
-// Arrumar as imagens
-
 export function Projetos() {
 
     const { t } = useTranslation()
-    // Visualizar funcoes
     const explicitTheme: ThemeInput = {
         light: ['#fff', '#022C3E']
     };
@@ -71,7 +67,7 @@ export function Projetos() {
                             titulo="List Efficient"
                             descricao={t("List Efficient é um projeto destinado a todos que buscam organizar suas tarefas, como tarefas do dia a dia, do trabalho, da faculdade ou de qualquer outro ramo de sua vida.")}
                             changeButton={false}
-                            url="https://github.com/TheRealRobinho/ToDoList"
+                            url="https://github.com/TheRealsz/ToDoList"
                             urlDemo="#"
                             disabled={true}>
                             <li>
@@ -89,7 +85,7 @@ export function Projetos() {
                             titulo="Random LOL"
                             descricao={t("O Random LOL é um projeto que lhe mostra um personagem do jogo League of Legends de forma aleatória, lhe mostrando seu nome, ícone, habilidades, historia e características do personagem.")}
                             changeButton={false}
-                            url="https://github.com/TheRealRobinho/Random_LOL"
+                            url="https://github.com/TheRealsz/Random_LOL"
                             urlDemo="#"
                             disabled={true}>
                             <li>
@@ -119,8 +115,8 @@ export function Projetos() {
                             titulo="Date Countdown"
                             descricao={t("O Date Countdown foi projetado para o usuário se informar do tempo em que há entre o agora e a data estipulada pelo mesmo.")}
                             changeButton={false}
-                            url="https://github.com/TheRealRobinho/Date_Countdown"
-                            urlDemo="https://therealrobinho.github.io/Date_Countdown/">
+                            url="https://github.com/TheRealsz/Date_Countdown"
+                            urlDemo="https://therealsz.github.io/Date_Countdown">
                             <li>
                                 <SiHtml5 role="img" aria-label="HTML 5"/>
                             </li>
@@ -142,8 +138,8 @@ export function Projetos() {
                             titulo="Calculadora IMC"
                             descricao={t("A Calculadora IMC foi projetada para ajudar as pessoas a identificar dentro do padrão do IMC se esta dentro do peso ideal para suas características físicas")}
                             changeButton={false}
-                            url="https://github.com/TheRealRobinho/Calculadora_IMC"
-                            urlDemo="https://therealrobinho.github.io/Calculadora_IMC/Index.html">
+                            url="https://github.com/TheRealsz/Calculadora_IMC"
+                            urlDemo="https://therealsz.github.io/Calculadora_IMC/Index.html">
                             <li>
                                 <SiHtml5 role="img" aria-label="HTML 5"/>
                             </li>

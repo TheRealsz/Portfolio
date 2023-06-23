@@ -19,23 +19,22 @@ export function Contato() {
     const successToast = () => toast.success(t('Mensagem enviada!'), {style: {backgroundColor: "green", color: "#fff", top: "50px", position: "relative"}, });
     const errorToast = () => toast.error(t('Algo deu errado, tente novamente!'), {style: {backgroundColor: "red", color: "#fff", top: "50px", position: "relative"}, });
 
-    // Ver func e mudar
     const form = useRef<HTMLFormElement | null>(null);
 
-    const sendEmail = (e: React.FormEvent) => {
-        e.preventDefault();
+    async function sendEmail(e: React.FormEvent) {
+        try{
+            e.preventDefault()
+            await emailjs.sendForm(serviceID, templateID, form.current!, publicID)
+            successToast()
+            if (form.current) {
+                form.current.reset();
+              }
+        }
+        catch (error){
+            errorToast()
+        }
+    }
 
-        emailjs.sendForm(serviceID, templateID, form.current!, publicID)
-            .then((result) => {
-                successToast()
-                if (form.current) {
-                    form.current.reset();
-                  }
-            }, (error) => {
-                errorToast()
-            });
-    };
-    
     return (
         <Container fluid id="contactContainer">
             <Particle />

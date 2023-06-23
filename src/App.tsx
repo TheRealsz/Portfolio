@@ -14,10 +14,6 @@ import './styles/global.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-// Usar as ferramentas de inspecionar codigo para pegar feedbacks
-// feedbacks gerais
-// Tirar dependencias que nao usa
-
 function App() {
 
   

@@ -13,14 +13,14 @@ export function Footer(){
             <Row>
                 <Col md={6}>
                     <div className="developed">
-                        <p>{t("Desenvolvido por ")}<a className="strong-name" href="https://github.com/TheRealRobinho">Robson Diego</a></p>
+                        <p>{t("Desenvolvido por ")}<a className="strong-name" href="https://github.com/TheRealsz">Robson Diego</a></p>
                     </div>
                 </Col>
                 <Col md={6}>
                     <div className="social-media">
                         <ul className="list-socialmedia">
                             <li>
-                                <a href="https://github.com/TheRealRobinho" target="_blank">
+                                <a href="https://github.com/TheRealsz" target="_blank">
                                     <AiFillGithub role="img" aria-label={t("Icone Github") || ""}/>
                                 </a>
                             </li>
