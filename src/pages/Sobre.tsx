@@ -40,7 +40,7 @@ export function Sobre() {
                                         <BiJoystickAlt /> {t("Jogar")}
                                     </li>
                                     <li>
-                                        <FiMonitor /> {t("Assistir series/filmes/animes/lives/videos")}
+                                        <FiMonitor /> {t("Assistir series e filmes")}
                                     </li>
                                     <li>
                                         <CgGym /> {t("Academia")}
