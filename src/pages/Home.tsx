@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect'
 import { ButtonNav } from "../components/ButtonNav"
 import { useTranslation } from "react-i18next"
 import { FiDownload } from "react-icons/fi"
-import CV from '../assets/RobsonDiego_Curriculo2023_06.pdf'
+import CV from '../assets/RobsonDiego_Curriculo2023_07.pdf'
 import Lottie from 'react-lottie';
 import spaceman from '../lotties/happy-spaceman.json';
 import '../styles/home.scss'
